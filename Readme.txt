@@ -1,6 +1,6 @@
 Team Members : -
 Shalini Singh
 Shibangi Das
-Gaurav Kumar
+Gaurav Singh
 Rehan Khan
 Shivam Dubey

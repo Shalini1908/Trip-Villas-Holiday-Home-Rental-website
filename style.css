@@ -1,0 +1,118 @@
+@font-face {
+    font-family: ProximaNova;
+      font-display: swap;
+    src: url(https://d2v8elt324ukrb.cloudfront.net/static/riotuikit/fonts/ProximaNova-Reg-webfont.e382c667a811.woff2) format('woff2'),
+         url(https://d2v8elt324ukrb.cloudfront.net/static/riotuikit/fonts/ProximaNova-Reg-webfont.12ccd551e987.woff) format('woff');
+  }
+  @font-face {
+    font-family: ProximaNovaLight;
+    font-display: swap;
+    src: url(https://d2v8elt324ukrb.cloudfront.net/static/riotuikit/fonts/ProximaNova-Light-webfont.7357745905a0.woff2) format('woff2'),
+         url(https://d2v8elt324ukrb.cloudfront.net/static/riotuikit/fonts/ProximaNova-Light-webfont.17aa4534a407.woff) format('woff');
+
+  }
+  html{
+      font-family:ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      font-size:15px;
+      font-weight:normal;
+      line-height:1.5;
+      -webkit-text-size-adjust:100%;
+      background:#fff;
+      color:#666;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      text-rendering:optimizeLegibility
+  }
+  h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6, .uk-heading-small, .uk-heading-medium, .uk-heading-large, .uk-heading-xlarge, .uk-heading-2xlarge {
+      font-family: ProximaNovaLight,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      font-weight: 300;
+      color: #000000;
+
+  }
+  .uk-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
+      margin: 0 10px !important;
+  }
+
+   h1, .uk-h1 {
+       font-size: 30px !important;
+   }
+
+  .blacknav {
+      background: #262626 !important;
+  }
+  .uk-logo img {
+      height: 25px;
+  }
+  .uk-label {
+      padding: 5px 10px;
+  }
+
+  .uk-button-primary:disabled {
+      background-color: #8ec3f7;
+      color: #FFF;
+      border-color: #4ea0f3;
+  }
+  .fullscreen {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: white;
+  }
+  .menuleft {
+      margin-left: 10px;
+  }
+  @media only screen and (max-width: 960px) {
+      body {
+          margin-bottom: 80px;
+      }
+  }
+  @media only screen and (max-width: 420px) {
+
+      .uk-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
+          margin: 0 5px !important;
+      }
+      h1, .uk-h1 {
+       font-size: 24px !important;
+   }
+  }
+  @media only screen and (max-width: 380px) {
+      .uk-button {
+
+
+      }
+      .uk-tab>* {
+          padding-left: 10px;
+          position: relative;
+      }
+      .uk-tab {
+          margin-left: -10px;
+      }
+      .uk-padding {
+          padding: 20px;
+      }
+      .uk-text-lead {
+          font-size: 1.2em;
+      }
+       .uk-logo img {
+          height: 20px;
+      }
+       .uk-navbar-right {
+           font-size: 0.8em;
+       }
+       .menuleft {
+           margin-left: 4px;
+       }
+       h1 {
+           font-size: 20px !important;
+       }
+       .searchwidgetformcontainer {
+           padding: 5px 10px !important;
+       }
+       .searchwidgetcontainer {
+           padding: 0px 20px !important;
+       }
+
+  }

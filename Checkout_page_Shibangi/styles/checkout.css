@@ -1,0 +1,308 @@
+#main_container {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  gap: 50px;
+  margin: 50px 50px 50px 50px;
+}
+#container1 {
+  width: 1200px;
+}
+#container2 {
+  width: 42%;
+}
+
+#book_tension_free {
+  border: 1px solid blue;
+  background-color: #1e87f0;
+  height: 230px;
+  color: white;
+}
+
+#btf {
+  margin-left: 25px;
+}
+
+ul li {
+  padding: 5px 0px;
+}
+
+#hotel_img {
+  height: auto;
+  width: 350px;
+}
+
+#container4 {
+  display: flex;
+  margin-top: 25px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px 0px;
+
+  height: 180px;
+}
+#div1 {
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+#container3 {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+#container3 > div {
+  height: 150px;
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px 0px;
+  text-align: center;
+}
+
+#container3 > div > h4 {
+  margin-top: 35px;
+}
+
+#security_deposite {
+  border: 1px solid pink;
+  height: 90px;
+  background-color: #fef4f6;
+}
+
+#alert {
+  height: 25px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#i {
+  display: flex;
+}
+
+#rs {
+  display: flex;
+}
+
+#rsd {
+  margin-top: -2px;
+  margin-left: 10px;
+}
+
+#indianrs {
+  height: 20px;
+}
+#rupee {
+  display: flex;
+}
+#bookfast {
+  height: 50px;
+  width: 590px;
+}
+#bfyou {
+  display: flex;
+  background-color: #fff6ee;
+  color: #faa05a;
+  padding-left: 30px;
+}
+
+#form {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px 0px;
+  height: 300px;
+  width: 590px;
+  margin-top: 30px;
+}
+
+#userlogo {
+  height: 20px;
+}
+
+#contact_info {
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  height: 30px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#eyci {
+  margin-top: -0.5px;
+  color: #666666;
+  font-size: 20px;
+  line-height: 22.5px;
+  margin-left: 5px;
+}
+#ind_mobile {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 20px 20px;
+}
+
+#country_code {
+  border-color: #666666;
+  box-sizing: border-box;
+  height: 40px;
+  width: 90px;
+  appearance: none;
+  padding-left: 10px;
+}
+#country_code:hover {
+  border-color: #1e87f0;
+}
+
+#diamond {
+  height: 20px;
+  margin-top: 10px;
+  position: absolute;
+  margin-left: -23px;
+}
+
+#mn {
+  box-sizing: border-box;
+  height: 40px;
+  width: 350px;
+  padding-left: 10px;
+}
+#mn:hover {
+  border-color: #1e87f0;
+}
+
+#otp {
+  box-sizing: border-box;
+  height: 40px;
+  padding-left: 10px;
+}
+#otp:hover {
+  border-color: #1e87f0;
+}
+#get_otp {
+  margin-left: 83%;
+}
+#fullname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 20px 20px 20px;
+}
+
+#firstname,
+#lastname {
+  box-sizing: border-box;
+  height: 40px;
+  width: 320px;
+  padding-left: 10px;
+}
+#firstname:hover {
+  border-color: #1e87f0;
+}
+#lastname:hover {
+  border-color: #1e87f0;
+}
+
+#email {
+  box-sizing: border-box;
+  height: 40px;
+  width: 550px;
+  margin: 20px 20px 20px 20px;
+  padding-left: 10px;
+}
+#email:hover {
+  border-color: #1e87f0;
+}
+#message_box {
+  box-shadow: rgb(0 0 0 / 8%) 0px 5px 15px 0px;
+  height: 250px;
+  width: 100%;
+}
+#msg {
+  border-bottom: 1px solid #e5e5e5;
+  height: 40px;
+  width: 525px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin: 20px 20px 20px 20px;
+}
+
+#msglogo {
+  height: 16px;
+}
+
+#write {
+  box-sizing: border-box;
+  height: 70px;
+  width: 550px;
+  padding-left: 10px;
+  margin: 20px 20px 20px 20px;
+}
+#write:hover {
+  border-color: #1e87f0;
+}
+#boppd {
+  box-shadow: rgb(0 0 0 / 8%) 0px 5px 15px 0px;
+  height: 650px;
+  width: 100%;
+}
+
+#booking {
+  border-bottom: 1px solid #e5e5e5;
+  height: 50px;
+  width: 81%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+  margin: 20px 20px 20px 20px;
+}
+#cardlogo {
+  height: 20px;
+}
+
+#paynow {
+  box-sizing: border-box;
+  height: 250px;
+  width: 525px;
+  padding-left: 17px;
+  margin: 20px 20px 20px 20px;
+}
+
+#rightlogo {
+  height: 35px;
+  margin-top: 20px;
+}
+
+#pay_credit_debit {
+  box-sizing: border-box;
+  border: 2px solid #1e87f0;
+  box-sizing: border-box;
+  height: 280px;
+  width: 550px;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin: 20px 20px 20px 20px;
+}
+#bluetick {
+  display: flex;
+}
+
+#ctm {
+  border: none;
+  background-color: #f0506e;
+  color: white;
+  height: 50px;
+  width: 200px;
+}
+
+#agree_continue {
+  background-color: #f8f8f8;
+  color: #666666;
+}
+
+#agree_continue_btn {
+  border: none;
+  background-color: #1e87f0;
+  color: white;
+  height: 50px;
+  width: 590px;
+  margin-top: 40px;
+}

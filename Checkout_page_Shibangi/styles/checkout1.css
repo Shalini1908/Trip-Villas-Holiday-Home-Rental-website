@@ -5,10 +5,10 @@
   margin-left: 73.8%;
 }
 #div1,
-#div2,
-#div3 {
+#div2 {
   margin: 25px 50px;
 }
+
 #ppn {
   margin-left: 190px;
   margin-top: -45px;
@@ -22,16 +22,19 @@
   margin-top: 20px;
   margin-left: 10px;
 }
-#p,
-#p1 {
-  margin-left: 15px;
-  margin-top: 15px;
+#p {
+  border: none;
+  background-color: ;
+  margin: auto;
 }
 
 #checkin {
   height: 32px;
   width: 140px;
   font-size: 15px;
+}
+#checkin:hover {
+  border-color: #1e87f0;
 }
 
 #checkout {
@@ -40,9 +43,13 @@
   margin-left: 10px;
   font-size: 15px;
 }
+#checkout:hover {
+  border-color: #1e87f0;
+}
 
 #div4 {
-  border: 1px solid blue;
+  border: 1px solid black;
+  display: flex;
   margin: 25px 50px;
 }
 #Select_guests {
@@ -55,10 +62,10 @@
   padding-left: 5px;
   margin: auto;
 }
-
-#div4 {
-  display: flex;
+#div4:hover {
+  border-color: #1e87f0;
 }
+
 #diamond {
   height: 20px;
   margin-top: 10px;
@@ -91,4 +98,8 @@
   height: 25px;
   margin-top: 13px;
   margin-left: 10px;
+}
+#div3 {
+  border: ;
+  margin-left: 50px;
 }

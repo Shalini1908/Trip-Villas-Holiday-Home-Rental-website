@@ -18,6 +18,9 @@ function renderDom(data){
  
     data.forEach((el) => {
 
+    let box = document.createElement("div");
+    box.setAttribute("class","adding");
+
 
 
     let card = document.createElement("div");
@@ -30,17 +33,7 @@ function renderDom(data){
     image.src = el.Image;
     image.style.cursor = "pointer";
 
-    image.onclick=()=>{
-
-        let bookingData = JSON.parse(localStorage.getItem("detail")) || []
-         bookingData.push(el)
-
-         localStorage.setItem("detail",JSON.stringify(bookingData));
-         window.location.href = "detail.html"
-
-    }
-
-    let ref = document.createElement("p");
+     let ref = document.createElement("p");
     ref.innerText = ` Ref Id - ${el.id}`;
     ref.style.marginTop ="35px"
 
@@ -126,9 +119,11 @@ function renderDom(data){
      box1.append(card)
      btn_card.append(ref,title,place,btn_1,btn_2,btn_3,btn_4,price)
      box2.append(btn_card);
+     box.append(card,btn_card)
 
+ 
     
-    booking.append(card,btn_card)
+    booking.append(box)
 
     
     })
@@ -136,6 +131,21 @@ function renderDom(data){
     }
     
      renderDom(product_array)
+
+
+     let boxing=(el)=>{
+    
+        
+        let bookingData = JSON.parse(localStorage.getItem("detail")) || []
+        bookingData.push(el)
+
+        localStorage.setItem("detail",JSON.stringify(bookingData));
+        window.location.href = "detail.html";
+     
+
+
+
+     }
     
     
     // let userData =JSON.parse(localStorage.getItem("check")) || []

@@ -21,6 +21,10 @@ function renderDom(data){
     let box = document.createElement("div");
     box.setAttribute("class","adding");
 
+    box.onclick=()=>{
+
+        boxing(el)
+    }
 
 
     let card = document.createElement("div");
@@ -143,74 +147,9 @@ function renderDom(data){
         window.location.href = "detail.html";
      
 
-
-
      }
+
+
     
     
-    // let userData =JSON.parse(localStorage.getItem("check")) || []
-    // function next(el){
-    
-    //     let checkout = [];
-    //     let loginarr=JSON.parse(localStorage.getItem("logindetails"))
-     
-    //     if(loginarr===null){
-    
-    //         alert("Login First")
-    
-    //     }else{
-    //     window.location.href="checkout.html";
-    //     checkout.push(el)
-    //     localStorage.setItem("check",JSON.stringify(checkout))
-      
-    
-    //     }
-    
-    // }
-    
-    // function sortLtoH(){
-    // let userData =JSON.parse(localStorage.getItem("shalu")) 
-    
-    // userData.sort((a,b)=>
-    
-    // a.Price - b.Price
-    
-    // )
-    // localStorage.setItem("shalu",JSON.stringify(userData))
-    // renderDom(userData)
-    
-    // }
-    
-    // function sortHtoL(){
-    //     let userData =JSON.parse(localStorage.getItem("shalu")) 
-        
-    //     userData.sort((a,b)=>
-        
-    //    b.Price - a.Price
-        
-    //     )
-    //     localStorage.setItem("shalu",JSON.stringify(userData))
-    //     renderDom(userData)
-        
-    //     }
-    
-    //     document.getElementById("filter_ac").addEventListener("click",shalini)
-    
-    //      function shalini(){
-    //         console.log(data)
-    //         let f1=data.hotels.filter(function(el){
-    //             return el.Ac==true;
-    //         })
-    //       renderDom(f1)
-    //     }
-    
-    
-    //     document.getElementById("filter_nonac").addEventListener("click",sha)
-    
-    //     function sha(){
-    //        console.log(data)
-    //        let f1=data.hotels.filter(function(el){
-    //            return el.Ac==false;
-    //        })
-    //      renderDom(f1)
-    //    }
+   

@@ -24,16 +24,15 @@ div1.append(starting, price, prc_per_night);
 
 let div2 = document.createElement("div");
 div2.setAttribute("id", "div2");
-let icon_alert = document.createElement("img");
-icon_alert.src =
-  "https://as1.ftcdn.net/v2/jpg/03/08/40/00/1000_F_308400098_B4iQBlb5Bc0vZFnZbcnzorrTWQTIW0jY.jpg";
-icon_alert.setAttribute("id", "icon_alert");
-let p = document.createElement("h4");
-p.textContent = "Select dates";
-p.setAttribute("id", "p");
-p.style.color = " #f0506e";
-div2.append(icon_alert, p);
-div2.style.backgroundColor = "#fef4f6";
+// icon_alert.src =
+//   "https://as1.ftcdn.net/v2/jpg/03/08/40/00/1000_F_308400098_B4iQBlb5Bc0vZFnZbcnzorrTWQTIW0jY.jpg";
+// icon_alert.setAttribute("id", "icon_alert");
+// let p = document.createElement("h4");
+// p.textContent = "Select dates";
+// p.setAttribute("id", "p");
+// p.style.color = " #f0506e";
+// div2.append(icon_alert, p);
+// div2.style.backgroundColor = "#fef4f6";
 
 let div3 = document.createElement("div");
 div3.setAttribute("id", "div3");
@@ -58,7 +57,7 @@ selected_g.onchange = () => {
   selectG();
 };
 let selectG = () => {
-//   console.log("ok");
+  //   console.log("ok");
   let selected_g = +document.getElementById("Select_guests").value;
   if (selected_g === null) {
     let division7 = document.getElementById("div7");
@@ -144,17 +143,7 @@ let check_in_dt = document.getElementById("checkin").value;
 let check_out_dt = document.getElementById("checkout").value;
 
 if (check_in_dt === null && check_out_dt === null) {
-  let icon_alert = document.createElement("img");
-  icon_alert.src =
-    "https://as1.ftcdn.net/v2/jpg/03/08/40/00/1000_F_308400098_B4iQBlb5Bc0vZFnZbcnzorrTWQTIW0jY.jpg";
-  icon_alert.setAttribute("id", "icon_alert");
-  let p = document.createElement("h4");
-  p.textContent = "Select dates";
-  p.setAttribute("id", "p");
-  p.style.color = " #f0506e";
-  div2.append(icon_alert, p);
-  div2.style.backgroundColor = "#fef4f6";
-  //instantBook_btn.setAttribute("disabled", true);
+  instantBook_btn.setAttribute.disabled
 } else {
   let obj = {
     check_in_dt,
@@ -166,24 +155,32 @@ if (check_in_dt === null && check_out_dt === null) {
   tick.src =
     "https://www.freeiconspng.com/thumbs/check-tick-icon/tick-icon-16.png";
   tick.setAttribute("id", "tick");
-  let p1 = document.createElement("h4");
+  let p1 = document.createElement("button");
   p1.textContent = "Your dates are available to book";
   p1.setAttribute("id", "p");
   p1.style.color = "#32d296";
   div2.style.backgroundColor = "#edfbf6";
   div2.append(tick, p1);
   //instantBook_btn.setAttribute("disabled", false);
-  document.getElementById("checkin").value=null;
-  document.getElementById("checkout").value=null;
+  document.getElementById("checkin").value = null;
+  document.getElementById("checkout").value = null;
 
   instantBook_btn.onclick = () => {
     book();
   };
 }
 
-
-
 function book() {
   console.log("ok");
   window.location.href = "checkout.html";
 }
+
+// let previous_btn = document.getElementById("previous");
+// const previousBtn = () => {
+//   if (page === 1) {
+//     previous_btn.disabled = true;
+//   }
+//   page--;
+//   next_btn.disabled = false;
+//   getData(page);
+// };

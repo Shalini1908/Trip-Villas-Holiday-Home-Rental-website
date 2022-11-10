@@ -67,3 +67,11 @@ let renderDOM2 = () => {
   container3.append(chkin, chkout, gsts, unit);
 };
 renderDOM2();
+
+function work() {
+  let cc = document.getElementById("country_code").value;
+  let mob = document.getElementById("mn").value;
+  let otp = document.getElementById("otp").value;
+}
+
+

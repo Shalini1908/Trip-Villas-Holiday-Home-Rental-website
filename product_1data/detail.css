@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    #navbar{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        background-color: black;
+        position: fixed;
+    
+        }
+
+        #logo{
+            padding-left: 10px;
+            display: flex;
+            margin-top: -4px;
+            padding: 8px;
+        }
+        #logo img{
+            width: 100%;
+            height: 56px;
+        }
+         
+
+ 
+button{
+
+    font-family: "Segoe UI","Arial,sans-serif";
+    margin-top: 15px;
+    }
+    
+    /* #res{
+    
+    margin-top: 20px;
+    margin-left: 35px;
+    font-family: "Segoe UI","Arial,sans-serif"
+    } */
+    
+    #main{
+    
+    display: flex;
+    width: 100%;
+    
+    }
+    
+    #container{
+    
+    
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(400px);
+    width: 55%;
+    
+    /* margin-top: 100px; */
+    
+    
+    
+    
+    
+    }
+    
+    #parent{
+    
+    
+    width: 100%;
+    margin-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    #parent img{
+    
+    width: 92%;
+    height: 92%;
+    margin-left: 10px;
+    
+    
+    
+    }
+    
+    #box1{
+    
+    width: 48%;
+    }
+    
+    #box2{
+        display: flex;
+    margin-top: 25px;
+    width: 52%;
+    margin-left: 70px;
+    
+    }  
+
+    .adding{
+
+        display: flex;
+        background: #fff;
+        color: #666;
+        margin-top: 80px;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 8%); 
+           }   

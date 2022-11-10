@@ -2,6 +2,8 @@
 import ProductData from "../Data/data1.js";
 let product_array = ProductData;
 
+
+
 function renderDom(data){
 
     let box1 = document.getElementById("box1");
@@ -9,11 +11,14 @@ function renderDom(data){
 
     let box2 = document.getElementById("box2");
     box2.innerHTML = null;
-    let booking = document.getElementById("container")
-    booking.innerHTML = null;
+
+     let booking = document.getElementById("container")
+     booking.innerHTML = null;
 
  
     data.forEach((el) => {
+
+
 
     let card = document.createElement("div");
      card.setAttribute("id","parent");
@@ -25,21 +30,28 @@ function renderDom(data){
     image.src = el.Image;
     image.style.cursor = "pointer";
 
+    image.onclick=()=>{
+
+        let bookingData = JSON.parse(localStorage.getItem("detail")) || []
+         bookingData.push(el)
+
+         localStorage.setItem("detail",JSON.stringify(bookingData));
+         window.location.href = "detail.html"
+
+    }
+
     let ref = document.createElement("p");
     ref.innerText = ` Ref Id - ${el.id}`;
-    ref.style.marginTop ="20px"
+    ref.style.marginTop ="35px"
 
     let title =  document.createElement("h4");
     title.innerText = el.Title;
     title.style.marginTop ="20px"
-    title.style.color = "black";
+    title.style.color = "#262626";
     title.style.cursor = "pointer";
+    title.style.fontSize = "18px";
+   
 
-    title.onclick=()=>{
-
-    linktonext(id)
-
-    }
    
  
     let place = document.createElement("p");
@@ -101,18 +113,23 @@ function renderDom(data){
 
 
     let price = document.createElement("h4");
-    price.innerText = `${el.price}- for 2 Nights`;
+    price.innerText = el.price;
     price.style.marginTop ="20px";
-    price.style.color = "black";
+    price.style.color = "#262626";
     price.style.cursor = "pointer";
+   
 
-     
-    card.append(image)
     
-    box1.append(card)
+   
+     card.append(image)
+    
+     box1.append(card)
      btn_card.append(ref,title,place,btn_1,btn_2,btn_3,btn_4,price)
-    box2.append(btn_card);
+     box2.append(btn_card);
+
+    
     booking.append(card,btn_card)
+
     
     })
     

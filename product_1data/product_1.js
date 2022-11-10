@@ -10,20 +10,17 @@ function renderDom(data) {
   let booking = document.getElementById("container");
   booking.innerHTML = null;
 
-  data.forEach((el) => {
-    function renderDom(data) {
-      let box1 = document.getElementById("box1");
-      box1.innerHTML = null;
 
-      let box2 = document.getElementById("box2");
-      box2.innerHTML = null;
-
-      let booking = document.getElementById("container");
-      booking.innerHTML = null;
 
       data.forEach((el) => {
+     
         let box = document.createElement("div");
-        box.setAttribute("class", "adding");
+        box.setAttribute("class","adding");
+        
+        box.onclick=()=>{
+    
+            boxing(el)
+        }
 
         let card = document.createElement("div");
         card.setAttribute("id", "parent");
@@ -119,21 +116,7 @@ function renderDom(data) {
 
         price.style.cursor = "pointer";
 
-        card.append(image);
-
-        box1.append(card);
-        btn_card.append(ref, title, place, btn_1, btn_2, btn_3, btn_4, price);
-        box2.append(btn_card);
-
-        booking.append(card, btn_card);
-      });
-    }
-
-    renderDom(product_array);
-
-    
-
-    card.append(image);
+     card.append(image);
 
     box1.append(card);
     btn_card.append(ref, title, place, btn_1, btn_2, btn_3, btn_4, price);

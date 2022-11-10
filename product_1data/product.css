@@ -1,189 +1,155 @@
-* {
+*{
   margin: 0;
   padding: 0;
-}
-
-
-#navbar{
-    display: flex;
-    width: 100%;
-    height: 60px;
-    background-color: black;
-    position: fixed;
-
-    }
-    #logo{
-        padding-left: 10px;
-        display: flex;
-        margin-top: -4px;
-        padding: 8px;
-    }
-    #logo img{
-        width: 100%;
-        height: 56px;
-    }
-
-#filter{
-height: 64px;
-border-bottom: 1px solid rgb(222, 222, 222);
-background: white;
-width: 55%;
-
-
-
-
-
-
-#navbar {
-  display: flex;
-  width: 100%;
-  height: 60px;
-  background-color: black;
-  position: fixed;
-
-}
-#logo {
-  padding-left: 10px;
-  display: flex;
-  margin-top: -4px;
-  padding: 8px;
-}
-#logo img {
-  width: 100%;
-  height: 56px;
-}
-
-#filter {
+  }
+  
+  #navbar{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      background-color: black;
+      position: fixed;
+  
+      }
+      #logo{
+          padding-left: 10px;
+          display: flex;
+          margin-top: -4px;
+          padding: 8px;
+      }
+      #logo img{
+          width: 100%;
+          height: 56px;
+      }
+  
+  #filter{
   height: 64px;
   border-bottom: 1px solid rgb(222, 222, 222);
   background: white;
   width: 55%;
-}
-
-
-
-#main{
-
-display: flex;
-width: 100%;
-
-.app {
+  
+  
+  
+  
+  
+  }
+  
+  .app{
+  
   padding: 0 15px;
   line-height: 28px;
-  font-size: 0.875rem;
+  font-size: .875rem;
   cursor: pointer;
   margin-left: 20px;
   background-color: transparent;
   color: #333;
-
-
+  
   border: 1px solid #e5e5e5;
-}
-
-#container{
-
-
-display: grid;
-gap:20px;
-grid-template-columns: repeat(1,1fr);
-grid-template-rows: repeat(400px);
-width: 55%;
-
-
-
-
-
-
-
-.mod {
+  }
+  
+  .mod{
   float: right;
   padding: 0 15px;
   line-height: 28px;
-  font-size: 0.875rem;
+  font-size: .875rem;
   cursor: pointer;
   margin-right: 20px;
   background-color: transparent;
   color: #333;
   border: 1px solid #e5e5e5;
-
-}
-
-button {
-  font-family: "Segoe UI", "Arial,sans-serif";
+  }
+  
+  button{
+  
+  font-family: "Segoe UI","Arial,sans-serif";
   margin-top: 15px;
-}
-
-
-
-#parent img{
-
-width: 92%;
-height: 92%;
-margin-left: 10px;
-
-
-
-#main {
+  }
+  
+  
+  
+  #main{
+  
   display: flex;
   width: 100%;
-
-}
-
-#container {
+  
+  }
+  
+  #container{
+  
+  
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(1, 1fr);
+  gap:20px;
+  grid-template-columns: repeat(1,1fr);
   grid-template-rows: repeat(400px);
   width: 55%;
-}
-
-#parent {
+  
+  
+  
+  
+  
+  
+  }
+  
+  #parent{
+  
+  
   width: 100%;
   margin-top: 20px;
   margin-top: 30px;
   display: flex;
-}
-
-#parent img {
+  
+  
+  
+  }
+  
+  
+  #parent img{
+  
   width: 92%;
   height: 92%;
   margin-left: 10px;
-}
-
-#gmap_canvas{
-
-width:100%;
-height: 650px;
-top:0;
-
-#box1 {
+  
+  
+  
+  }
+  
+  #box1{
+  
   width: 48%;
-}
-
-#box2 {
-  display: flex;
+  }
+  
+  #box2{
+      display: flex;
   margin-top: 25px;
   width: 52%;
   margin-left: 70px;
-}
-
-
-.mapouter {
+  
+  }
+  
+  
+  
+  .mapouter{
+  
   margin-top: -64px;
   width: 45%;
   position: fixed;
-  margin-left: 55%;
-}
-
-#gmap_canvas {
-  width: 100%;
+   margin-left: 55%;  
+  
+  
+  }
+  
+  #gmap_canvas{
+  
+  width:100%;
   height: 650px;
-  top: 0;
-}
-
-.adding {
+  top:0;
+  
+  }
+  
+  .adding{
+  
   display: flex;
   background: #fff;
   color: #666;
-  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
-}
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%); 
+     }   

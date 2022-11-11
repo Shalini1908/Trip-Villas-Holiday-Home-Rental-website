@@ -1,4 +1,3 @@
-//const url = "https://masai-api.herokuapp.com/hotels/search?city=goa";
 let ccs = JSON.parse(localStorage.getItem("checkin_checkout_selectg"));
 console.log(ccs);
 let bookingData = JSON.parse(localStorage.getItem("detail"));
@@ -47,7 +46,6 @@ renderDOM();
 
 let renderDOM2 = () => {
   let container3 = document.getElementById("container3");
-  //get the dates data from the local storage
 
   let chkin = document.createElement("div");
   let checkin_div = document.createElement("h4");
@@ -101,9 +99,39 @@ let cleanfee = 1000;
 cf.append(cleanfee);
 
 let total = document.getElementById("total");
-sum = dicnt + taxfee + cleanfee;
+sum = bookedprc - dicnt + taxfee + cleanfee;
 console.log(sum);
 
 total.append(sum);
 
+let agree_continue_btn_div = document.getElementById("agree_continue_btn");
+agree_continue_btn_div.onclick = () => {
+  let cc = document.getElementById("country_code").value;
+  let mob = document.getElementById("mn").value;
+  let otp = document.getElementById("otp").value;
+  let firstname = document.getElementById("firstname").value;
+  let lastname = document.getElementById("lastname").value;
+  let email = document.getElementById("email").value;
 
+  if (
+    cc.value == "" ||
+    mob.value == "" ||
+    otp.value == "" ||
+    firstname.value == "" ||
+    lastname.value == "" ||
+    email.value == ""
+  ) {
+    return;
+  } else {
+    let obj = {
+      cc,
+      mob,
+      otp,
+      firstname,
+      lastname,
+      email,
+    };
+    localStorage.setItem("userInfo", JSON.stringify(obj));
+    alert("Booking Successful");
+  }
+};

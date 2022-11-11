@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+     
+       #button {
+            margin-top: 40px;
+            margin-left: 50%;
+        }
+
+        hr {
+            margin: 30px;
+            opacity: 0.5;
+        }
+
+        #div3 {
+            width: 35%;
+            margin: auto;
+            padding: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #submit{
+    background-color:
+#1e87f0 ;
+color: white;
+padding: 10px;
+border: none;
+
+
+   }
+   #only{
+    margin-top: 0px;
+text-decoration: none;
+    font-size: 12px;
+    color:#459af2;
+   }
+   #cancel{
+    
+padding: 10px;
+border: none;
+   }
+
+        h1 {
+            margin-left: 30px;
+        }
+        #otpdiv{
+            margin-left: 30px;
+            
+        }
+        #otp{
+            height: 30px;
+            width: 70%;
+        } 
+        
+        
+    </style> 
+</head>
+<body>
+    <div id="div3">
+        <h1>Sign Up</h1>
+        <hr />
+       
+          <div id="otpdiv">
+            <input type="number" placeholder="Enter Your OTP" id="otp">
+           <a id="only" href="./signup.html"><p>Go Back</p></a> 
+          </div>
+
+           
+            
+            <hr />
+
+            <div id="button">
+                <input type="submit" value="CANCEL" name="cancel" id="cancel">
+                <input type="submit" value="VERIFY WITH OTP" name="VERIFY WITH OTP" id="submit">
+
+              
+            </div>
+    
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("submit").addEventListener("click",getSignUp)
+    function getSignUp(){
+        let otp=document.getElementById("otp").value
+        if(otp==1234){
+            window.location.href="./index.html"
+           
+        }else{
+            alert("wrong Credential")
+            
+        }
+    }
+    document.querySelector('#cancel').addEventListener('click',getLoggedIn)
+ 
+ function getLoggedIn(){
+     window.location.href = './signup.html'
+ }
+
+</script> 

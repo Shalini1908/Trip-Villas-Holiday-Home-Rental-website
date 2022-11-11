@@ -19,7 +19,7 @@
             <h1 id="logo">
                 <a href="./navbar.html"><img src="https://i.postimg.cc/wB0s9Zdm/Crystal-Villas-Navbar-Logo-resized-removebg-preview.png
                     " alt="CRYSTALVILLAS"></a>
-                    <a id="admin" href="./admin.html"><h6>Admin</h6></a>
+                <a id="admin" href="./admin.html"><h6>Admin</h6></a>
             </h1>
             
             <ul class="right">
@@ -107,8 +107,9 @@
     <div id="sigin">
         <div id="div2">
             <h1>Sign In</h1>
+            
            <hr />
-           <form action="">
+           <form action="" id="signinForm" onsubmit="signedIn(event)">
            <div id="numberbar">
              <select name="" id="select">
                <option value="">+1</option>
@@ -155,29 +156,31 @@
                <option value="">+95</option>
                <option value="">+98</option>
              </select>
-             <input type="number" id="mobile" placeholder="Mobile Number" />
+             <input type="number" id="mobile1" placeholder="Mobile Number" />
              <p id="only">Only digits allowed</p>
            </div>
            <hr>
            <div id="button">
-               <input type="submit" value="CANCEL" name="cancel" id="signup">
-               <input type="submit" value="VERIFY WITH OTP" name="VERIFY WITH OTP" id="submit" id="submit1">
-          
+               <input type="button" value="CANCEL" name="cancel" id="signup">
+               <input type="submit" value="SIGN IN" name="SIGN IN" id="submit1" >
+            
            </div>
           
        </form>
           </div>
 
     </div>
+
     <div id="div" class="signup_div">
         <div id="signhead">
             <h1>Sign Up</h1>
             <a href="./signin.html">Sign In Instead</a>
         </div>
+        
         <hr />
-        <form action="">
+        <form action="" id="form">
             <div id="numberbar">
-                <select name="" id="select">
+                 <select name="" id="select1">
                     <option value="">+1</option>
                     <option value="">+7</option>
                     <option value="">+20</option>
@@ -221,7 +224,7 @@
                     <option value="">+94</option>
                     <option value="">+95</option>
                     <option value="">+98</option>
-                </select>
+                </select> 
                 <input type="number" id="mobile" placeholder="Mobile Number" />
                 <p id="only">Only digits allowed</p>
             </div>
@@ -230,14 +233,14 @@
             <input class="out" type="password" id="password" placeholder="password " /><br />
 
             <div id="inputtag">
-                <input class="input" type="text" id="name"  placeholder="First Name" />
+                <input class="input" type="text" id="name" placeholder="First Name" />
                 <input class="input" type="text" id="lastname" placeholder="Last Name" />
             </div>
             <hr />
 
             <div id="button">
-               <a href="home.html"><input  type="submit" value="CANCEL" name="cancel" id="cancel"></a> 
-                <input type="submit" value="VERIFY WITH OTP" name="VERIFY WITH OTP" class="signup_submit" id="submit">
+               <a href="./index.html"><input  type="submit" value="CANCEL" name="cancel" id="cancel"></a> 
+                <input type="button" value="VERIFY WITH OTP" name="VERIFY WITH OTP" id="submit">
 
               
             </div>
@@ -248,3 +251,5 @@
 </body>
 </html>
 <script src="./components/component.js"></script>
+<script src="./scripts/signup.js"></script>
+<script src="./scripts/signin.js"></script>

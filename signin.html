@@ -17,9 +17,9 @@
             <h1>Sign In</h1>
             
            <hr />
-           <form action="">
+           <form action="" id="signinForm" onsubmit="signedIn(event)">
            <div id="numberbar">
-             <select name="" id="select">
+             <select name="" id="select1">
                <option value="">+1</option>
                <option value="">+7</option>
                <option value="">+20</option>
@@ -64,14 +64,14 @@
                <option value="">+95</option>
                <option value="">+98</option>
              </select>
-             <input type="number" id="mobile" placeholder="Mobile Number" />
+             <input type="number" id="mobile1" placeholder="Mobile Number" />
              <p id="only">Only digits allowed</p>
            </div>
            <hr>
            <div id="button">
-               <input type="submit" value="CANCEL" name="cancel" id="signup">
-               <input type="submit" value="VERIFY WITH OTP" name="VERIFY WITH OTP" id="submit" id="submit1">
-          
+               <input type="button" value="CANCEL" name="cancel" id="signup">
+               <input type="submit" value="SIGN IN" name="SIGN IN" id="submit1" >
+            
            </div>
           
        </form>

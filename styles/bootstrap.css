@@ -50,7 +50,7 @@
 .text_center {
   position: absolute;
   top: 35px;
-  left: 70px;
+  left: 85px;
   text-align: center;
 }
 .text_center > p {

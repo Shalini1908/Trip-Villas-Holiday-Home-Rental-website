@@ -70,3 +70,24 @@ const oceania = () => {
   dataappend6.style.display = "grid";
   dataappend6.style.gridTemplate = "columns";
 };
+
+let search = document.getElementById("search-btn");
+
+search.onclick = () => {
+  search_again();
+};
+let search_again = () => {
+  let data_country = document.getElementById("country").value;
+  if (data_country == "mumbai") {
+    window.location.href = "./";
+  } else if (data_country == "goa") {
+    window.location.href = "./";
+  } else {
+    alert("Sorry For Inconvenience this place is not available");
+  }
+};
+
+let redirect = document.getElementById("goa_redirect");
+redirect.onclick = () => {
+  window.location.href = "./";
+};

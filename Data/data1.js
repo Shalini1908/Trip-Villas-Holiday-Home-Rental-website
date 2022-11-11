@@ -9,7 +9,8 @@ let ProductData = [
     "btn_2" : "3 BEDROOM",
     "btn_3" : "2 BATHROOM",
     "btn_4" : "SWIMMING POOL",
-     "price": "₹  7103     per night",
+     "price": 7103,
+     "rating" : "Rated 4/5 by 4 guests"
     
   
     },
@@ -23,7 +24,8 @@ let ProductData = [
     "btn_2" : "MAX 2 GUESTS",
     "btn_3" : "TV",
     "btn_4" : "AC",
-     "price": "₹  5073  per night",
+     "price": 5073,
+     "rating" : "Rated 4/5 by 4 guests"
     },
     {
  
@@ -35,7 +37,8 @@ let ProductData = [
      "btn_2" : "1 BEDROOM WTIH AC",
     "btn_3" : "TV",
     "btn_4" : "WIFI",
-     "price": "₹  3090  per night",
+     "price": 3090,
+     "rating" : "Rated 4/5 by 4 guests"
     },
     {
     
@@ -47,7 +50,8 @@ let ProductData = [
     "btn_2" : "AC",
     "btn_3" : "2 BEDROOM",
     "btn_4" : "SWIMMING POOL",
-     "price": "₹  8552 for 2 nights",
+     "price": 8552,
+     "rating" : "Rated 4/5 by 4 guests"
     },
     {
     
@@ -59,7 +63,8 @@ let ProductData = [
     "btn_2" : "AC",
     "btn_3" : "2 BEDROOM",
     "btn_4" : "SWIMMING POOL",
-     "price": "₹  4030",
+     "price": 4030,
+     "rating" : "Rated 4/5 by 4 guests"
     },
     {
     
@@ -71,7 +76,8 @@ let ProductData = [
     "btn_2" : "AC",
     "btn_3" : "2 BEDROOM",
     "btn_4" : "SWIMMING POOL",
-     "price": "₹  7000",
+     "price": 7000,
+     "rating" : "Rated 4/5 by 4 guests"
     },
     {
   
@@ -83,7 +89,8 @@ let ProductData = [
     "btn_2" : "AC",
     "btn_3" : "2 BEDROOM",
     "btn_4" : "SWIMMING POOL",
-     "price": "₹  6060",
+     "price": 6060,
+     "rating" : "Rated 4/5 by 4 guests"
     },
     {
    
@@ -95,7 +102,8 @@ let ProductData = [
     "btn_2" : "AC",
     "btn_3" : "2 BEDROOM",
     "btn_4" : "SWIMMING POOL",
-     "price": "₹  8809",
+     "price": 8809,
+     "rating" : "Rated 4/5 by 4 guests"
     },
     
    

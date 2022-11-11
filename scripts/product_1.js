@@ -37,7 +37,7 @@ function renderDom(data) {
 
         let ref = document.createElement("p");
         ref.innerText = ` Ref Id - ${el.id}`;
-        ref.style.marginTop = "35px"
+        ref.style.marginTop = "4px";
 
         let title = document.createElement("h4");
         title.innerText = el.Title;
@@ -102,18 +102,23 @@ function renderDom(data) {
 
 
         let price = document.createElement("h4");
-        price.innerText = el.price;
+        price.innerText = ` ₹ ${el.price} per night`;
         price.style.marginTop = "20px";
         price.style.color = "#262626";
         price.style.cursor = "pointer";
-
+       
+        let rating = document.createElement("p");
+        rating.innerText = el.rating;
+        rating.style.marginTop = "20px";
+        rating.style.color = "#1e87f0";
+        rating.style.cursor = "pointer";
 
 
 
         card.append(image)
 
         box1.append(card)
-        btn_card.append(ref, title, place, btn_1, btn_2, btn_3, btn_4, price)
+        btn_card.append(ref, title, place, btn_1, btn_2, btn_3, btn_4, price,rating)
         box2.append(btn_card);
         box.append(card, btn_card)
 
@@ -132,12 +137,29 @@ renderDom(product_array)
 let boxing = (el) => {
 
 
-   
+
+  
+
 
     localStorage.setItem("detail", JSON.stringify(el));
     window.location.href = "detail.html";
 }
 
+
+document.querySelector(".app").addEventListener("click", function(){
+    document.querySelector(".append_filterdata").classList.add("filter_flag")
+    document.querySelector("#main").style.overflow="hidden";
+
+
+})
+
+
+document.querySelector("#filter_btn_cancel").addEventListener("click", function(){
+    document.querySelector(".append_filterdata").classList.remove("filter_flag")
+    document.querySelector("#main").style.overflow="scroll"
+})
+
+ 
 
 
 

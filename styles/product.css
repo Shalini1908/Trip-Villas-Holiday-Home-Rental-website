@@ -1,7 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  }
+
   
   #navbar{
       display: flex;
@@ -140,7 +137,7 @@
   }
   
   .adding{
-  height: 285px;
+  height: 300px;
   display: flex;
   background: #fff;
   color: #666;

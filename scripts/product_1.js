@@ -132,10 +132,9 @@ renderDom(product_array)
 let boxing = (el) => {
 
 
-    let bookingData = JSON.parse(localStorage.getItem("detail")) || []
-    bookingData.push(el)
+   
 
-    localStorage.setItem("detail", JSON.stringify(bookingData));
+    localStorage.setItem("detail", JSON.stringify(el));
     window.location.href = "detail.html";
 }
 

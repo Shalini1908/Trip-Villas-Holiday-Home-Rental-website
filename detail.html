@@ -1,27 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail Page</title>
-    <link rel="stylesheet" href="./styles/detail.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/detail.css" />
+  </head>
+  <body>
     <div id="navbar">
-
- <div id="logo">
-
-    <img src="Images/Crystal_Villas.png" alt="">
- </div>   
-
-</div>
-    <div id="container">
-
-        <div id="box1"></div>   
-        <div id="box2"></div>
-
+      <div id="logo">
+        <img src="Images/Crystal_Villas.png" alt="" />
+      </div>
     </div>
-</body>
+    <div id="main">
+      <div id="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+      </div>
+      <div id="side_checkout">
+        <div id="align">
+          <div id="staring">
+            <h3 id="starting">Starting</h3>
+            <h1 id="show_price"></h1>
+          </div>
+          <div id="chkin_chkot">
+            <input type="date" id="checkin" />
+            <input type="date" id="checkout" />
+          </div>
+
+          <div id="select_guests">
+            <select name="" id="choose_guests">
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+            </select>
+          </div>
+          <div id="rateplan">
+            <p>Rateplan: No meals provided (European Plan)</p>
+          </div>
+
+          <div id="total">
+            <div id="total_fees">
+              <h4>Total</h4>
+              <p id="itf">Includes taxes & fees</p>
+            </div>
+            <div id="price_in_rs_view">
+              <h4 id="price_in_rs"></h4>
+              <a href="#" style="text-decoration: none"
+                ><p id="vies_dtl">View details</p></a
+              >
+            </div>
+          </div>
+          <button id="request_to_book">REQUEST TO BOOK</button>
+          <div id="scp">
+            <a href="#" style="text-decoration: none"
+              ><p>Stringent Cancellation Policy</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
 <script src="./scripts/detail.js"></script>

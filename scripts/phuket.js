@@ -31,7 +31,8 @@ function renderDom(data) {
 
         let ref = document.createElement("p");
         ref.innerText = ` Ref Id - ${el.id}`;
-        ref.style.marginTop = "35px"
+        ref.style.marginTop = "4px";
+     
 
         let title = document.createElement("h4");
         title.innerText = el.Title;
@@ -93,13 +94,43 @@ function renderDom(data) {
         btn_4.style.color = "#333";
         btn_4.style.border = "1px solid #e5e5e5";
 
+        let btn_5 = document.createElement("button");
+        btn_5.innerText = el.btn_5;
+        btn_5.style.padding = "0 15px";
+        btn_5.style.lineHeight = "28px";
+        btn_5.style.fontSize = ".875rem";
+        btn_5.style.cursor = "pointer";
+        btn_5.style.marginRight = "20px";
+        btn_5.style.backgroundColor = "transparent";
+        btn_5.style.color = "#333";
+        btn_5.style.border = "1px solid #e5e5e5";
+
+        let btn_6 = document.createElement("button");
+        btn_6.innerText = el.btn_6;
+        btn_6.style.padding = "0 15px";
+        btn_6.style.lineHeight = "28px";
+        btn_6.style.fontSize = ".875rem";
+        btn_6.style.cursor = "pointer";
+        btn_6.style.marginRight = "20px";
+        btn_6.style.backgroundColor = "transparent";
+        btn_6.style.color = "#333";
+        btn_6.style.border = "1px solid #e5e5e5";
+
 
 
         let price = document.createElement("h4");
-        price.innerText = el.Price;
+        price.innerText = el.price;
         price.style.marginTop = "20px";
         price.style.color = "#262626";
         price.style.cursor = "pointer";
+        price.innerText = ` ₹ ${el.price} per night`;
+
+        
+        let rating = document.createElement("p");
+        rating.innerText = el.rating;
+        rating.style.marginTop = "20px";
+        rating.style.color = "#1e87f0";
+        rating.style.cursor = "pointer";
 
 
 
@@ -107,7 +138,7 @@ function renderDom(data) {
         card.append(image)
 
         box1.append(card)
-        btn_card.append(title,price)
+        btn_card.append(ref, title, place, btn_1, btn_2, btn_3, btn_4, btn_5 , btn_6, price,rating)
         box2.append(btn_card);
         box.append(card, btn_card)
 
@@ -124,3 +155,15 @@ renderDom(product_array)
 
 
 
+document.querySelector(".app").addEventListener("click", function(){
+    document.querySelector(".append_filterdata").classList.add("filter_flag")
+    document.querySelector("#main").style.overflow="hidden";
+
+
+})
+
+
+document.querySelector("#filter_btn_cancel").addEventListener("click", function(){
+    document.querySelector(".append_filterdata").classList.remove("filter_flag")
+    document.querySelector("#main").style.overflow="scroll"
+})

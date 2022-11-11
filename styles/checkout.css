@@ -306,3 +306,20 @@ ul li {
   width: 590px;
   margin-top: 40px;
 }
+
+.texts {
+  display: flex;
+  gap: 20px;
+}
+
+.texts > p {
+  font-size: small;
+  margin-top: -5px;
+}
+
+#locate {
+  margin-top: -10px;
+}
+.st {
+  color: #666666;
+}

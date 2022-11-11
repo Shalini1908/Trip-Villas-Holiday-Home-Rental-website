@@ -137,7 +137,9 @@ renderDom(product_array)
 let boxing = (el) => {
 
 
+
   
+
 
     localStorage.setItem("detail", JSON.stringify(el));
     window.location.href = "detail.html";

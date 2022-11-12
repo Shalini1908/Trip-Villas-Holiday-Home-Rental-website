@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/checkout.css" />
+    <link
+      rel="shortcut icon"
+      href="https://i.ibb.co/YtfV4nw/Crystal-Villas-Navbar-Logo-resized-removebg-preview.png"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css" />
     <title>Checkout</title>
   </head>
-  <body>
+  <body class="b">
+    <div id="navBar"></div>
     <div id="main_container">
       <div id="container1">
         <div id="book_tension_free">
-          <h2 id="btf">Book Tension Free</h2>
+          <h3 id="btf">Book Tension Free</h3>
           <ul id="lines">
             <li>Your payments are secured by Tripvillas.</li>
             <li>
@@ -27,24 +33,24 @@
         <div id="container4"></div>
         <div id="container3"></div>
         <div id="total_div">
-          <h3 class="st" id="sub_total">
+          <h4 class="st" id="sub_total">
             Sub
-            Total.................................................................................................................................₹
-          </h3>
-          <h3 class="st" id="dis">
-            Discount...................................................................................................................................₹
-          </h3>
-          <h3 class="st" id="tax">
-            Tax...........................................................................................................................................₹
-          </h3>
-          <h3 class="st" id="cf">
+            Total...............................................................................................................................................₹
+          </h4>
+          <h4 class="st" id="dis">
+            Discount................................................................................................................................................₹
+          </h4>
+          <h4 class="st" id="tax">
+            Tax.........................................................................................................................................................₹
+          </h4>
+          <h4 class="st" id="cf">
             Cleaning
-            Fee............................................................................................................................₹
-          </h3>
+            Fee.........................................................................................................................................₹
+          </h4>
           <hr />
-          <h3 id="total">
-            Total.........................................................................................................................................₹
-          </h3>
+          <h4 id="total">
+            Total......................................................................................................................................................₹
+          </h4>
           <hr />
         </div>
         <div id="security_deposite">
@@ -59,7 +65,7 @@
           <div id="rs">
             <h4 id="rsd" style="color: #f0506e">
               Refundable Security
-              Deposit.........................................................................................................................
+              Deposit.................................................................................................................
             </h4>
             <div id="rupee">
               <img
@@ -207,11 +213,13 @@
                 Put your credit/debit card on file.
               </h2>
             </div>
-
-            <h4 style="color: #666666">
-              Since this booking is on 'Request To Book', We will only charge
-              your card once owner accepts the booking.
-            </h4>
+            <div id="req_to_bk">
+              <h4 style="color: #666666">
+                Since this booking is on 'Request To Book', We will only charge
+                your card once owner accepts the booking.
+              </h4>
+            </div>
+           
             <p style="color: #666666">This is 100% Secure</p>
             <p style="color: #666666">
               We DO NOT store/save your credit card details.We use Stripe.com.
@@ -232,4 +240,4 @@
     </div>
   </body>
 </html>
-<script src="./scripts/checkout.js"></script>
+<script type="module" src="./scripts/checkout.js"></script>

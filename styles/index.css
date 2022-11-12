@@ -3,6 +3,8 @@
   padding: 0px;
 } */
 body {
+  margin: 0px;
+  padding: 0px;
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,8 +13,8 @@ body {
   border: 1px solid grey;
   width: 100%;
   margin: auto;
-  height: 500px;
-  background-image: url(https://d2v8elt324ukrb.cloudfront.net/static/new_template/media/Pimal2-1.2d5d237dbd32.jpg);
+  height: 525px;
+  background-image: url(https://i.ibb.co/ZYB9f87/Pimal2-1-2d5d237dbd32-2.jpg);
   /* background-size: contain; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -27,6 +29,7 @@ body {
   margin-top: 12%;
   margin-left: 18%;
   line-height: 40px;
+  font-weight: 100;
 }
 
 .mini-search {
@@ -54,7 +57,7 @@ body {
 }
 #searchdiv > :first-child {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 200;
 }
 #searchdiv span {
   color: black;
@@ -179,35 +182,42 @@ button {
 .box1 {
   width: 100%;
   height: 150px;
-  background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16724/photo_200/3cfe907bf1a711e9924e0a8e1b1ce4da_photo_200.jpeg);
+  background-image: url(https://i.ibb.co/HpXBgmc/Untitled-6.jpg);
   background-size: 100% 100%;
   color: white;
+  font-weight: 500;
 }
 
 .box2 {
-  background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16720/photo_200/3a17e0ebf71b11e992500a8e1b1ce4da_photo_200.jpeg);
+  background-image: url(https://i.ibb.co/tJdVRCs/Untitled-13.jpg);
   color: white;
+  font-weight: 500;
 }
 .box3 {
-  background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16722/photo_200/d9d86936f1a311e9924e0a8e1b1ce4da_photo_200.jpeg);
+  background-image: url(https://i.ibb.co/82DhbZm/Untitled-5.jpg);
   color: white;
+  font-weight: 500;
   /* filter: contrast(75%); */
 }
 .box4 {
-  background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16723/photo_200/14650812f1a811e9924e0a8e1b1ce4da_photo_200.jpeg);
+  background-image: url(https://i.ibb.co/56Dm5m6/Untitled-18.jpg);
   color: white;
+  font-weight: 500;
 }
 .box5 {
-  background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16721/photo_200/a85131caf1a511e9924e0a8e1b1ce4da_photo_200.jpeg);
+  background-image: url(https://i.ibb.co/DYPx7hm/Untitled-19.jpg);
   color: white;
+  font-weight: 500;
 }
 .box6 {
-  background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16727/photo_200/92a02d4af1a511e9924e0a8e1b1ce4da_photo_200.jpeg);
+  background-image: url(https://i.ibb.co/whd2fcX/Untitled-20.jpg);
   color: white;
+  font-weight: 500;
 }
 .box7 {
-  background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/gated_community/16728/photo_200/de6bc87af1a411e9924e0a8e1b1ce4da_photo_200.jpeg);
+  background-image: url(https://i.ibb.co/s9Vwg8T/Untitled-21.jpg);
   color: white;
+  font-weight: 500;
 }
 .box8 {
   width: 100%;
@@ -215,6 +225,7 @@ button {
   background-image: url(https://d2vcelvjdj7n25.cloudfront.net/media/collection/beautiful-Bali-Gazebo_1.jpg);
   background-size: 100% 100%;
   color: white;
+  font-weight: 500;
 }
 
 .box1 > .dev_center {

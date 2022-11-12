@@ -1,3 +1,7 @@
+import getnavbar from "../components/navbar.js";
+
+let navbar = (document.getElementById("getnavbar").innerHTML = getnavbar());
+
 let dataappend1 = document.getElementById("row6_footer_inner");
 let dataappend2 = document.getElementById("row6_footer_inner2");
 let dataappend3 = document.getElementById("row6_footer_inner3");
@@ -90,5 +94,5 @@ let search_again = () => {
 
 let redirect = document.getElementById("goa_redirect");
 redirect.onclick = () => {
-  window.location.href = "";
+  window.location.href = "./Product_Page2.html";
 };

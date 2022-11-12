@@ -1,6 +1,10 @@
 import ProductData from "../Data/data1.js";
 let product_array = ProductData;
 
+import getnavbar from "../components/navbar.js";
+
+let navbar = document.getElementById("navbar").innerHTML = getnavbar();
+
 localStorage.setItem("detail",JSON.stringify(product_array))
 
 function renderDom(data) {

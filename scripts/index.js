@@ -78,16 +78,17 @@ search.onclick = () => {
 };
 let search_again = () => {
   let data_country = document.getElementById("country").value;
-  if (data_country == "mumbai") {
-    window.location.href = "./";
-  } else if (data_country == "goa") {
-    window.location.href = "./";
+  if (data_country == "Phuket") {
+    window.location.href = "phuket.html";
+  } else if (data_country == "Goa") {
+    window.location.href = "product_1.html";
   } else {
     alert("Sorry For Inconvenience this place is not available");
   }
+  document.getElementById("country").value = null;
 };
 
 let redirect = document.getElementById("goa_redirect");
 redirect.onclick = () => {
-  window.location.href = "./";
+  window.location.href = "";
 };

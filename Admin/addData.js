@@ -1,28 +1,15 @@
 
 let userData = JSON.parse(localStorage.getItem("hoteldata")) || []
 
-// function user (t,i,p,r,a,rs){
-
-//     this.title = t;
-//     this.image = i;
-//     this.price = p;
-//     this.rating= r;
-//     this.ac= a;
-//     this.rooms = rs;
-    
-    
-//     }
-
-// //form
-
-
 let  subm=(event)=>{
 
 event.preventDefault()
 
-let title = document.getElementById("title").value;
+window.location.reload(true)
 
-   let image = document.getElementById("images").value;
+let title = document.getElementById("destination").value;
+
+   let image = document.getElementById("villa").value;
 
    let price = document.getElementById("price").value;
    
@@ -32,8 +19,6 @@ let title = document.getElementById("title").value;
 
    let rooms =document.getElementById("rooms").value;
    
-// let users = new user(image,title,price,rating,AC,rooms)
-//  console.log(users)
 let obj = {
 
 title,
@@ -42,8 +27,6 @@ price,
 rating,
 ac,
 rooms
-
-
 
 }
 
@@ -64,38 +47,50 @@ data.forEach(({image,title,price,rating,rooms,ac}) => {
 let card = document.createElement("div");
 card.setAttribute("id","hotel");
 
+
 let Image =  document.createElement("img");
 Image.src = image;
 
 
 
-let Title =  document.createElement("h4");
-Title.innerText = title;
+let Title =  document.createElement("p");
+Title.innerText = ` Destination - ${title}`;
 Title.style.color = "white";
 Title.style.textAlign = "center"
+Title.style.fontFamily = "Segoe UI ,Roboto, Helvetica Neue ,Arial,sans-serif";
+Title.style.fontSize = "20px"
 
 let Price =  document.createElement("p");
-Price.innerText = `Price    -  ${price}`;
+Price.innerText = ` Booking Price    -  ${price}`;
 Price.style.color = "white";
-Price.style.textAlign = "center"
+Price.style.textAlign = "center";
+Price.style.fontFamily = "Segoe UI ,Roboto, Helvetica Neue ,Arial,sans-serif";
+Price.style.fontSize = "20px"
 
 
 let Rating = document.createElement("p");
-Rating.innerText = `Rating   -  ${rating}` 
+Rating.innerText = `Rating  by  guests -  ${rating}` 
 Rating.style.color = "white";
-Rating.style.textAlign = "center"
+Rating.style.textAlign = "center";
+Rating.style.PaddingLeft = "100px"
+Rating.style.fontFamily = "Segoe UI ,Roboto, Helvetica Neue ,Arial,sans-serif";
+Rating.style.fontSize = "20px";
 
 
 let Rooms =  document.createElement("p");
-Rooms.innerText =  `Rooms    -   ${rooms}`;
+Rooms.innerText =  `Rooms  Available  -   ${rooms}`;
 Rooms.style.color = "white";
-Rooms.style.textAlign = "center"
+Rooms.style.textAlign = "center";
+Rooms.style.fontFamily = "Segoe UI ,Roboto, Helvetica Neue ,Arial,sans-serif";
+Rooms.style.fontSize = "20px"
 
 
 let Ac =  document.createElement("p");
-Ac.innerText = `AC  -   ${ac}`;
+Ac.innerText = `Air Conditioner  -   ${ac}`;
 Ac.style.color = "white";
-Ac.style.textAlign = "center"
+Ac.style.textAlign = "center";
+Ac.style.fontFamily = "Segoe UI ,Roboto, Helvetica Neue ,Arial,sans-serif";
+Ac.style.fontSize = "20px"
 
 
 

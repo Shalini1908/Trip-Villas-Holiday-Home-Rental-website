@@ -86,6 +86,9 @@ let search_again = () => {
     alert("Sorry For Inconvenience this place is not available");
   }
   document.getElementById("country").value = null;
+  document.getElementById("date1").value = null;
+  document.getElementById("date2").value = null;
+  document.getElementById("guests").value = null;
 };
 
 let redirect = document.getElementById("goa_redirect");

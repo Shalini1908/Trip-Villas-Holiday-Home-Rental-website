@@ -1,11 +1,11 @@
-function getnavbar(){
-    return`<header >
+function getnavbar() {
+  return `<header >
     <nav>
 
         <h1 id="logo">
             <a href="./navbar.html"><img src="https://i.postimg.cc/wB0s9Zdm/Crystal-Villas-Navbar-Logo-resized-removebg-preview.png
                 " alt="CRYSTALVILLAS"></a>
-            <a id="admin" href="./admin.html"><h6>Admin</h6></a>
+                <a id="admin" href="./Admin/admin.html"><h6>Admin</h6></a>
         </h1>
         
         <ul class="right">
@@ -232,7 +232,7 @@ function getnavbar(){
           
         </div>
     </form>
-</div>`
+</div>`;
 }
 
-export default getnavbar
+export default getnavbar;

@@ -30,7 +30,7 @@ function renderDom(data) {
 
   let title = document.createElement("h4");
   title.innerText = data.Title;
-  title.style.marginTop = "40px";
+  title.style.marginTop = "50px";
   title.style.color = "#262626";
   title.style.cursor = "pointer";
   title.style.fontSize = "35px";
@@ -129,6 +129,7 @@ book_btn.onclick = () => {
   let select_g = +document.getElementById("choose_guests").value;
 
   if (checkindt === "" && checkoutdt === "") {
+    alert("Please select dates");
     return;
   } else {
     let obj = {

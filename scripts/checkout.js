@@ -19,6 +19,7 @@ let renderDOM = () => {
 
   let refernce_id = document.createElement("p");
   refernce_id.innerText = `Property Ref Id ${bookingData.id}`;
+  refernce_id.setAttribute("id", "ref_id");
 
   let title = document.createElement("h1");
   title.textContent = bookingData.Title;
@@ -126,6 +127,7 @@ agree_continue_btn_div.onclick = () => {
     lastname.value == "" ||
     email.value == ""
   ) {
+    alert("Please fill up all the fields");
     return;
   } else {
     let obj = {

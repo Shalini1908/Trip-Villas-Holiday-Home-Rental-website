@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/YtfV4nw/Crystal-Villas-Navbar-Logo-resized-removebg-preview.png">
+    <style>
+        body{
+            background-color: rgb(99, 97, 97);
+        }
+        #newID{
+            margin: auto;
+        }
+        #newP{
+            display: grid;
+            grid-template-columns: repeat(1,30%);
+            justify-content: center;
+            gap: 20px;
+        }
+        #newP>input{
+            height: 35px;
+            padding-left: 10px;
+        }
+        #newB{
+            margin-left: 35%;
+            width: 120px;
+            height: 45px;
+            font-size: 16px;
+        }
+    </style>
+    <title>Sign-Up</title>
+</head>
+<body>
+    <div id="navbarImp"></div>
+    
+    <div id="newP">
+        <img src="" alt="">
+        <h1 id="newID">Sign Up</h1>
+        <input type="text" id="firstN" placeholder="First Name">
+        <input type="text" id="lastN" placeholder="Last Name">
+        <input type="number" id="newMob" placeholder="Mobile No.">
+        <input type="email" id="newMail" placeholder="Email">
+        <input type="password" id="newPass" placeholder="Password">
+        <button id="newB">Create</button>
+    </div>
+</body>
+</html>
+<script src="./scripts/newpage.js" type="module"></script>

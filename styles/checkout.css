@@ -1,7 +1,8 @@
+.b {
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
 #main_container {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   gap: 50px;
   margin: 50px 50px 50px 50px;
 }
@@ -20,11 +21,17 @@
 }
 
 #btf {
-  margin-left: 25px;
+  margin-left: 40px;
+  margin-top: 40px;
 }
-
+#lines {
+  margin-left: 20px;
+  margin-top: 20px;
+}
 ul li {
   padding: 5px 0px;
+  margin-left: 50px;
+  gap: 10px;
 }
 
 #hotel_img {
@@ -41,7 +48,7 @@ ul li {
 }
 #div1 {
   margin-left: 20px;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 #container3 {
@@ -57,7 +64,8 @@ ul li {
 }
 
 #container3 > div > h4 {
-  margin-top: 35px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 #security_deposite {
@@ -314,12 +322,28 @@ ul li {
 
 .texts > p {
   font-size: small;
-  margin-top: -5px;
+  margin-top: 10px;
 }
 
 #locate {
-  margin-top: -10px;
+  margin-top: 10px;
+ 
 }
 .st {
   color: #666666;
+  margin-top: 25px;
+  margin-left: 25px;
+  padding-top: 10px;
+}
+
+#title{
+  margin-top: 5px;
+  margin-left: -1px;
+}
+
+#total_div{
+  margin-top: 30px;
+}
+#total{
+  margin-left: 23px;
 }

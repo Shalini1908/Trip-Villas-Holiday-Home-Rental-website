@@ -1,3 +1,7 @@
+import getnavbar from "../components/navbar.js";
+
+let navBar_div = (document.getElementById("navBar").innerHTML = getnavbar());
+
 let bookingData = JSON.parse(localStorage.getItem("detail"));
 let values = JSON.parse(localStorage.getItem("checkin_checkout_selectg"));
 
@@ -58,46 +62,46 @@ function renderDom(data) {
   let btn_1 = document.createElement("button");
   btn_1.innerText = data.btn_1;
   btn_1.style.padding = "0 15px";
-  btn_1.style.lineHeight = "28px";
+  btn_1.style.lineHeight = "35px";
   btn_1.style.fontSize = ".875rem";
   btn_1.style.cursor = "pointer";
   btn_1.style.marginRight = "20px";
   btn_1.style.backgroundColor = "transparent";
-  btn_1.style.color = "blue";
-  btn_1.style.border = "1px solid blue";
+  btn_1.style.color = "#1e87f0";
+  btn_1.style.border = "1px solid #1e87f0";
 
   let btn_2 = document.createElement("button");
   btn_2.innerText = data.btn_2;
   btn_2.style.padding = "0 15px";
-  btn_2.style.lineHeight = "28px";
+  btn_2.style.lineHeight = "35px";
   btn_2.style.fontSize = ".875rem";
   btn_2.style.cursor = "pointer";
   btn_2.style.marginRight = "20px";
   btn_2.style.backgroundColor = "transparent";
-  btn_2.style.color = "blue";
-  btn_2.style.border = "1px solid blue";
+  btn_2.style.color = "#1e87f0";
+  btn_2.style.border = "1px solid #1e87f0";
 
   let btn_3 = document.createElement("button");
   btn_3.innerText = data.btn_3;
   btn_3.style.padding = "0 15px";
-  btn_3.style.lineHeight = "28px";
+  btn_3.style.lineHeight = "35px";
   btn_3.style.fontSize = ".875rem";
   btn_3.style.cursor = "pointer";
   btn_3.style.marginRight = "20px";
   btn_3.style.backgroundColor = "transparent";
-  btn_3.style.color = "blue";
-  btn_3.style.border = "1px solid blue";
+  btn_3.style.color = "#1e87f0";
+  btn_3.style.border = "1px solid #1e87f0";
 
   let btn_4 = document.createElement("button");
   btn_4.innerText = data.btn_4;
   btn_4.style.padding = "0 15px";
-  btn_4.style.lineHeight = "28px";
+  btn_4.style.lineHeight = "35px";
   btn_4.style.fontSize = ".875rem";
   btn_4.style.cursor = "pointer";
   btn_4.style.marginRight = "20px";
   btn_4.style.backgroundColor = "transparent";
-  btn_4.style.color = "blue";
-  btn_4.style.border = "1px solid blue";
+  btn_4.style.color = "#1e87f0";
+  btn_4.style.border = "1px solid #1e87f0";
 
   card.append(image);
 
@@ -157,4 +161,4 @@ let no_bed = document.getElementById("no_bed");
 no_bed.innerText = `${bookingData.btn_2}'S`;
 
 let no_bath = document.getElementById("no_bath");
-no_bath.innerText=`${bookingData.btn_3}'S`
+no_bath.innerText = `${bookingData.btn_3}'S`;

@@ -88,7 +88,7 @@ button {
   height: 1000px;
   width: 400px;
 
-  margin-top: 61px;
+  margin-top: 1px;
   padding-right: 50px;
   margin-left: 970px;
 }
@@ -158,7 +158,7 @@ button {
 }
 
 #pernight {
-  margin-left: 100px;
+  margin-left: 140px;
   margin-top: -25px;
   color: #666666;
 }
@@ -168,12 +168,12 @@ button {
 }
 
 #navbar2 {
-  height: 180px;
+  height: 140px;
   width: 100px;
 }
 #navigate {
   display: flex;
-  margin-top: 70px;
+  margin-top: 0px;
   height: 80px;
   width: 1000px;
   margin-left: 30px;
@@ -195,7 +195,7 @@ button {
 }
 
 .seereview {
-  color: blue;
+  color: #1e87f0;
 }
 
 #rt_sv {
@@ -205,8 +205,6 @@ button {
 }
 
 #home_des {
- 
-
   height: 600px;
   width: 1000px;
   margin-left: 40px;
@@ -242,7 +240,7 @@ button {
   display: flex;
   height: 500px;
   width: 1000px;
-  gap:20px
+  gap: 20px;
 }
 
 #villa_des1 {
@@ -302,14 +300,14 @@ button {
   margin-left: 120px;
 }
 
-#villa_des2{
-  
+#villa_des2 {
   margin-top: 50px;
 }
 
-#villa_des3,#villa_des4{
+#villa_des3,
+#villa_des4 {
   line-height: 22.5px;
 }
-#villa_des4{
+#villa_des4 {
   margin-top: 35px;
 }

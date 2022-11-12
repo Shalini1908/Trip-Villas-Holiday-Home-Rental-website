@@ -1,3 +1,7 @@
+import getnavbar from "../components/navbar.js";
+
+let navBar_div = (document.getElementById("navBar").innerHTML = getnavbar());
+
 let ccs = JSON.parse(localStorage.getItem("checkin_checkout_selectg"));
 console.log(ccs);
 let bookingData = JSON.parse(localStorage.getItem("detail"));
@@ -18,6 +22,7 @@ let renderDOM = () => {
 
   let title = document.createElement("h1");
   title.textContent = bookingData.Title;
+  title.setAttribute("id", "title");
 
   let location = document.createElement("p");
   location.textContent = bookingData.place;

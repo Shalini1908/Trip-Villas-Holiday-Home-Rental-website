@@ -1,14 +1,19 @@
 import ProductData from "../Data/data1.js";
 let product_array = ProductData;
 
+localStorage.setItem("detail",JSON.stringify(product_array))
 
 function renderDom(data) {
 
-    let box1 = document.getElementById("box1");
+    let box1 = document.createElement("div");
     box1.innerHTML = null;
+    box1.setAttribute("id","box1")
 
-    let box2 = document.getElementById("box2");
+    let box2 = document.createElement("div");
     box2.innerHTML = null;
+    box2.setAttribute("id","box2")
+
+  
 
     let booking = document.getElementById("container")
     booking.innerHTML = null;
@@ -60,7 +65,7 @@ function renderDom(data) {
         btn_1.style.marginRight = "20px";
         btn_1.style.backgroundColor = "transparent";
         btn_1.style.color = "#333";
-        btn_1.style.border = "1px solid #e5e5e5";
+        btn_1.style.border = "1px solid #1e87f0";
 
         let btn_2 = document.createElement("button");
         btn_2.innerText = el.btn_2;
@@ -71,7 +76,7 @@ function renderDom(data) {
         btn_2.style.marginRight = "20px";
         btn_2.style.backgroundColor = "transparent";
         btn_2.style.color = "#333";
-        btn_2.style.border = "1px solid #e5e5e5";
+        btn_2.style.border = "1px solid #1e87f0";
 
 
 
@@ -84,7 +89,7 @@ function renderDom(data) {
         btn_3.style.marginRight = "20px";
         btn_3.style.backgroundColor = "transparent";
         btn_3.style.color = "#333";
-        btn_3.style.border = "1px solid #e5e5e5";
+        btn_3.style.border = "1px solid #1e87f0";
 
 
 
@@ -97,7 +102,7 @@ function renderDom(data) {
         btn_4.style.marginRight = "20px";
         btn_4.style.backgroundColor = "transparent";
         btn_4.style.color = "#333";
-        btn_4.style.border = "1px solid #e5e5e5";
+        btn_4.style.border = "1px solid #1e87f0";
 
 
 
@@ -136,30 +141,63 @@ renderDom(product_array)
 
 let boxing = (el) => {
 
-
-
-  
-
-
     localStorage.setItem("detail", JSON.stringify(el));
     window.location.href = "detail.html";
 }
 
 
-document.querySelector(".app").addEventListener("click", function(){
-    document.querySelector(".append_filterdata").classList.add("filter_flag")
-    document.querySelector("#main").style.overflow="hidden";
-
-
-})
-
-
-document.querySelector("#filter_btn_cancel").addEventListener("click", function(){
-    document.querySelector(".append_filterdata").classList.remove("filter_flag")
-    document.querySelector("#main").style.overflow="scroll"
-})
-
  
+document.getElementById("ac").addEventListener("click", ac_filt);
+
+function ac_filt() {
+
+  var product_array = JSON.parse(localStorage.getItem("detail")) || [];
+  let f1 = product_array.filter(function (el) {
+    return el.btn_2 == "AC";
+  });
+ 
+  renderDom(f1)
+
+}
+
+
+document.getElementById("nonac").addEventListener("click", nonac_filt);
+
+function nonac_filt() {
+
+  var product_array = JSON.parse(localStorage.getItem("detail")) || [];
+  let f1 = product_array.filter(function (el) {
+    return el.btn_2 == "NON AC";
+  });
+ 
+  renderDom(f1)
+
+}
+
+
+let sort_lth = document.getElementById("app");
+
+sort_lth.onclick = () => {
+  var product_array = JSON.parse(localStorage.getItem("detail")) || [];
+ 
+
+  product_array.sort((a, b) => a.price - b.price);
+
+  localStorage.setItem("detail", JSON.stringify(product_array));
+  renderDom(product_array)
+};
+
+let sort_htl = document.getElementById("mod");
+
+sort_htl.onclick = () => {
+  var product_array = JSON.parse(localStorage.getItem("detail")) || [];
+
+  product_array.sort((a, b) => b.price - a.price);
+
+  localStorage.setItem("detail", JSON.stringify(product_array));
+  renderDom(product_array)
+};
+
 
 
 

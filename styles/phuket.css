@@ -1,93 +1,102 @@
 
-    
-    #navbar{
-        display: flex;
-        width: 100%;
-        height: 60px;
-        background-color: black;
-        position: fixed;
-    
-        }
-        #logo{
-            padding-left: 10px;
-            display: flex;
-            margin-top: -4px;
-            padding: 8px;
-        }
-        #logo img{
-            width: 100%;
-            height: 56px;
-        }
-    
-    #filter{
-    height: 64px;
-    border-bottom: 1px solid rgb(222, 222, 222);
-    background: white;
-    width: 55%;
-    display: flex;
-    
-    }
-    
-    .app{
-    
-    padding: 0 15px;
-    line-height: 28px;
-    font-size: .875rem;
-    cursor: pointer;
-    margin-left: 20px;
-    background-color: transparent;
-    color: #333;
-    
-    border: 1px solid #e5e5e5;
-    }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI","Arial,sans-serif";
+}
+   
+  #navbar{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      background-color: black;
+       position: sticky;
+      
+  
+      }
+      #logo{
+          padding-left: 10px;
+          display: flex;
+          margin-top: -4px;
+          padding: 8px;
+      }
+      #logo img{
+          width: 100%;
+          height: 56px;
+      }
+  
+  #filter{
+  height: 64px;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  background: white;
+  width: 55%;
+  margin-top: 10px;
+  }
 
-    
   .app > img {
 
-    width: 17%;
+    width: 30%;
   }
+  
+  #app{
+  
+  padding: 0 15px;
+  line-height: 28px;
+  font-size: .875rem;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: transparent;
+  color: #333;
     
-    .mod{
-    float: right;
-    padding: 0 15px;
-    line-height: 28px;
-    font-size: .875rem;
-    cursor: pointer;
-    margin-right: 20px;
-    background-color: transparent;
-    color: #333;
-    border: 1px solid #e5e5e5;
-    }
-    
-    button{
-    
-    font-family: "Segoe UI","Arial,sans-serif";
-    margin-top: 15px;
-    }
-    
-    
-    
-    #main{
-    
-    display: flex;
-    width: 100%;
-    
-    }
-    
-    #container{
-    
-    
-    display: grid;
-    gap:30px;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(400px);
-    width: 55%;
-    margin-top: 30px;
-    
-    
-    }
-    
-    #parent{
+  border: 1px solid rgb(30,135,240);
+ 
+  }
+  
+  #mod{
+  float: right;
+  padding: 0 15px;
+  line-height: 28px;
+  font-size: .875rem;
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: transparent;
+  color: #333;
+
+  border: 1px solid rgb(30,135,240);
+ 
+  }
+  
+  button{
+  
+  font-family: "Segoe UI","Arial,sans-serif";
+  margin-top: 15px;
+  }
+  
+  
+  
+  #main{
+  
+  display: flex;
+  width: 100%;
+  
+  }
+  
+  #container{
+  
+ display: grid;
+  gap:30px;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(400px);
+  width: 55%;
+  margin-top: 30px;
+  
+  
+  
+  
+  }
+  
+  
+  #parent{
     
     
     width: 50%;
@@ -102,10 +111,11 @@
     
     #parent img{
     
+ 
+    margin-left: 5px;
     width: 95%;
     height: 95%;
     margin-top: 10px;
-    margin-left: 5px;
  
     
     }
@@ -114,119 +124,63 @@
        width: 50%;
         margin-left: 15px;
     }
-   
-    
-    
-    
-    .mapouter{
-    
-    margin-top: -64px;
-    width: 45%;
-    position: fixed;
-     margin-left: 55%;  
-    
-    
-    }
-    
-    #gmap_canvas{
-    
-    width:100%;
-    height: 650px;
-    top:0;
-    
-    }
-    
-    .adding{
   
-    display: flex;
+  
+  
+  .mapouter{
+  
+  
+  width: 45%;
+  position: fixed;
+   margin-left: 55%;  
+  
+  
+  }
+  
+  #gmap_canvas{
+  
+  width:100%;
+  height: 650px;
+  top:0;
  
-   height: 340px;
-    background: #fff;
-    color: #666;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 8%); 
-       
-}   
+  
+  }
+  
+  .adding{
+  height: 300px;
+  display: flex;
+  background: #fff;
+  color: #666;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%); 
+  
+     }   
 
-.append_filterdata{
-    position: absolute;
-    z-index: 1000;
-    top: 0px;
-    left: 0px;
-    margin-top: 40px;
-    display: none;
-}
-.append_filterdata.filter_flag{
-    display: block;
-}
-#full{
-    width: 100vw;
-    height: 100vh;
-    /* background-color: rgba(0, 0, 0, 0.473); */
-    /* border: 1px solid; */
-}
-#filter_box{
-    width: 60%;
-    height: 60%;
-    margin: auto;
-    margin-top: 50px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-#filter_datas{
-    width: 100%;
-    height: 75%;
-    border-bottom: 1px solid #ccc;
-    display: flex;
- 
-    justify-content: space-around;
-    overflow: scroll;
-    /* margin-top: 20px; */
-}
-#filter_datas input{
-    margin-top: 20px;
-}
-#filter_datas label,span{
-    color: rgb(83, 83, 83);
-}
-#filter_datas>:last-child>div{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 0px 50px;
-}
-#filter_datas>:last-child>:nth-child(3){
-    margin-top: 30px;
-}
-#filter_datas>:last-child>:nth-child(5){
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-right: 100px;
-}
-#filter_btn{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 10px;
-}
-#filter_btn>button{
-    padding: 10px 20px;
-    margin-top: 7px;
-    margin-right: 10px;
-}
-#filter_btn>:first-child{
-    background-color: white;
-    border: 1px solid #ccc;
-}
-#filter_btn>:last-child{
-    background-color: rgb(30,135,240);
+
+
+ #ac{
+  
+    padding: 0 15px;
+    line-height: 28px;
+    font-size: .875rem;
+    cursor: pointer;
+    margin-left: 20px;
+    background-color: transparent;
+    color: #333;
     border: 1px solid rgb(30,135,240);
-    color: white;
-}
+   
+    }
+    
+    #nonac{
+    float: right;
+    padding: 0 15px;
+    line-height: 28px;
+    font-size: .875rem;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: transparent;
+    color: #333;
+   
+    border: 1px solid rgb(30,135,240);
 
-
-#image{
-
-margin-right: 250px;
-}
-
+    }
   

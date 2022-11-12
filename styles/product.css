@@ -1,177 +1,153 @@
+#logo {
+  padding-left: 10px;
+  display: flex;
+  margin-top: -4px;
+  padding: 8px;
+}
+#logo img {
+  width: 100%;
+  height: 56px;
+}
 
-      #logo{
-          padding-left: 10px;
-          display: flex;
-          margin-top: -4px;
-          padding: 8px;
-      }
-      #logo img{
-          width: 100%;
-          height: 56px;
-      }
-  
-  #filter{
+#filter {
   height: 64px;
-  border-bottom: 1px solid rgb(222, 222, 222);
+  border-bottom: 1px solid rgb(30, 135, 240);
   background: white;
   width: 55%;
   margin-top: 10px;
-  }
+}
 
-  .app > img {
+.app > img {
+  width: 30%;
+}
 
-    width: 30%;
-  }
-  
-  #app{
-  
+#app {
   padding: 0 15px;
   line-height: 28px;
-  font-size: .875rem;
+  font-size: 0.875rem;
   cursor: pointer;
   margin-left: 20px;
   background-color: transparent;
   color: #333;
-    
-  border: 1px solid rgb(30,135,240);
- 
-  }
-  
-  #mod{
+
+  border: 1px solid rgb(30, 135, 240);
+}
+
+#mod {
   float: right;
   padding: 0 15px;
   line-height: 28px;
-  font-size: .875rem;
+  font-size: 0.875rem;
   cursor: pointer;
   margin-right: 20px;
   background-color: transparent;
   color: #333;
 
-  border: 1px solid rgb(30,135,240);
- 
-  }
-  
-  button{
-  
-  font-family: "Segoe UI","Arial,sans-serif";
+  border: 1px solid rgb(30, 135, 240);
+}
+
+button {
+  font-family: "Segoe UI", "Arial,sans-serif";
   margin-top: 15px;
-  }
-  
-  
-  
-  #main{
-  
+}
+
+#main {
   display: flex;
   width: 100%;
-  
-  }
-  
-  #container{
-  
- display: grid;
-  gap:30px;
-  grid-template-columns: repeat(1,1fr);
+  height: 650px;
+  position: absolute;
+  top: 60px;
+}
+
+#container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(400px);
   width: 55%;
-  margin-top: 30px;
-  
-  
-  
-  
-  }
-  
-  
-  #parent{
-    
-    
-    width: 50%;
- 
-   margin-left: 8px;
-    display: flex;
-    
+  margin-top: 80px;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  overflow-y: scroll;
+}
 
-    
-    }
-    
-    
-    #parent img{
-    
- 
-    margin-left: 5px;
-    width: 95%;
-    height: 95%;
-    margin-top: 10px;
- 
-    
-    }
+#parent {
+  width: 50%;
 
-    #text{
-       width: 50%;
-        margin-left: 15px;
-    }
-  
-  
-  
-  .mapouter{
-  
+  margin-left: 8px;
+  display: flex;
+}
+
+#parent img {
+  margin-left: 5px;
+  width: 95%;
+  height: 95%;
+  margin-top: 10px;
+}
+
+#text {
+  width: 50%;
+  margin-left: 15px;
+}
+
+.mapouter {
   /* margin-top: -93px; */
   width: 45%;
   position: fixed;
-   margin-left: 55%;  
-    top:0; 
- 
-  
-  }
+  margin-left: 55%;
+  height: 100%;
+}
 
-  .gmap_canvas{
+.gmap_canvas {
+  position: sticky;
+}
 
-    position: sticky;
-  }
-  
-  #gmap_canvas{
-  
-  width:100%;
-  height: 750px;
+#gmap_canvas {
+  width: 100%;
+  height: 650px;
+}
 
-
- 
-  
-  }
-  
-  .adding{
+.adding {
   height: 300px;
   display: flex;
   background: #fff;
   color: #666;
-  box-shadow: 0 5px 15px rgb(0 0 0 / 8%); 
-  
-     }   
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+}
 
+#ac {
+  padding: 0 15px;
+  line-height: 28px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid rgb(30, 135, 240);
+}
 
+#nonac {
+  float: right;
+  padding: 0 15px;
+  line-height: 28px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: transparent;
+  color: #333;
 
- #ac{
-  
-    padding: 0 15px;
-    line-height: 28px;
-    font-size: .875rem;
-    cursor: pointer;
-    margin-left: 20px;
-    background-color: transparent;
-    color: #333;
-    border: 1px solid rgb(30,135,240);
-   
-    }
-    
-    #nonac{
-    float: right;
-    padding: 0 15px;
-    line-height: 28px;
-    font-size: .875rem;
-    cursor: pointer;
-    margin-right: 20px;
-    background-color: transparent;
-    color: #333;
-   
-    border: 1px solid rgb(30,135,240);
+  border: 1px solid rgb(30, 135, 240);
+}
 
-    }
+/* #getnavbar {
+  position: sticky;
+} */
+
+.adding {
+  height: auto;
+  display: flex;
+  background: #fff;
+  color: #666;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+}

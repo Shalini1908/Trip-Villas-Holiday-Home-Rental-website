@@ -90,5 +90,5 @@ let search_again = () => {
 
 let redirect = document.getElementById("goa_redirect");
 redirect.onclick = () => {
-  window.location.href = "";
+  window.location.href = "./Product_Page2.html";
 };

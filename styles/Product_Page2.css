@@ -477,7 +477,7 @@ header {
     margin: 0px;
 }
 .holidayhome2>div>:nth-child(2){
-    color: royalblue;
+    color: rgb(30,135,240);
     font-size: 14px;
     font-weight: 500;
 }

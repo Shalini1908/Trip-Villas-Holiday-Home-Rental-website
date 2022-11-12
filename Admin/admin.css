@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: "Segoe UI","Arial,sans-serif";
 }
 
 #main{
@@ -13,24 +14,27 @@
 
 h1{
 
-    margin-left: 20%;
-    margin-top: 42px;
+    margin-left: 24%;
+    margin-top: 70px;
 }
 
 h2{
 
     margin-left: 20%;
     margin-top: 25px;
+
    
 
 }
 
-h4{
+h3{
 
     margin-left: 25%;
     margin-top: 8px;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 #cont > h2 > a:hover{
 
@@ -63,7 +67,7 @@ h4{
 
 #cont{
 
-    margin-top: 70px;
+    margin-top: 100px;
  
 
 }
@@ -107,3 +111,9 @@ h4{
     width: 75%;
 
 }
+
+.fa-solid{
+
+    margin: 20px;
+}
+

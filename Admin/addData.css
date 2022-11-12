@@ -1,4 +1,8 @@
 
+*{
+    font-family: "Segoe UI","Arial,sans-serif";
+
+}
 body{
 
     background-color:#262626;;
@@ -6,19 +10,19 @@ body{
 
 form{
 
-     width: 340px; 
+     width: 490px; 
     height: 450px; 
-   
-    margin-top: 10px;
+  
+    margin-top: 5px;
 
    margin-left: 38%; 
 }
 
 input{
 
-    margin: 5px 1px;
-    width: 150px;
-    height: 28px;
+    margin: 5px 10px;
+    width: 200px;
+    height: 32px;
     padding-left: 10px;
 }
 
@@ -47,15 +51,18 @@ select{
 h3{
 
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
 }
+
+
 
 #sub{
 
     width: 186px;
     height: 35px;
-    margin-left: 74px;
+    margin-left: 146px;
+    margin-top: 20px;
 }
 
  #data{
@@ -84,7 +91,7 @@ h3{
      #dash > h3 > a{
 
         text-decoration: none;
-        color:black;
+        color:rgb(240, 240, 168);
         float: left;
         padding: 8px;
        
@@ -99,6 +106,9 @@ h3{
           width: 150px; 
           font-family: Arial, Helvetica, sans-serif;
       
-       
+       /* Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif */
+
        
     }
+
+   

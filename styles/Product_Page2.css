@@ -1,0 +1,308 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProximaNovaLight,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+#searchdiv{
+    width: 90%;
+    margin: auto;
+    padding: 30px 0px 40px 0px;
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#searchdiv>:first-child{
+    font-size: 30px;
+    font-weight:400;
+}
+#searchdiv span{
+    color: black;
+}
+#searchdiv>:nth-child(2){
+    font-size: 22.5px;
+    color: rgb(59, 59, 59);
+    font-weight: lighter;
+}
+#search_option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search_option>div{
+    display: flex;
+    border: 1px solid #ccc;
+    align-items: center;
+}
+#search_option img{
+    height: 20px;
+    width: 20px;
+}
+#search_option input{
+    border: 0px;
+}
+#search_option input:focus{
+    outline: none;
+}
+#search_option select:focus{
+    outline: none;
+}
+#search_option button:focus{
+    outline: none;
+}
+#search_option select{
+    border: 1px solid #ccc;
+}
+#search_option button{
+    background-color: rgb(30,135,240);
+    border: 0px;
+    color: white;
+}
+#search_option button:hover{
+    background-color: rgb(27, 120, 214);
+}
+#search_option input,select,button{
+    width: 170px;
+    padding: 5px;
+    color: rgb(59, 59, 59);
+}
+
+#citytype{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    cursor: pointer;
+}
+#citytype>:first-child{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+#citytype_city{
+    border-bottom: 1px solid blueviolet;
+}
+#citytype>:first-child>:nth-child(2){
+    margin-left: 25px;
+}
+#citytype>:first-child>div{
+    font-size: 14px;
+}
+.addlist{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 15px;
+}
+.typeslist{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 15px;
+}
+.addlist.flag{
+    display: none;
+}
+.typeslist.flag{
+    display: none;
+}
+#citytype_output p:first-child{
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: rgb(59, 59, 59);
+}
+#citytype_output p:nth-child(2){
+    font-size: 14px;
+    color: rgb(124, 124, 124);
+}
+
+#first_slider{
+    width: 90vw;
+    margin: auto;
+}
+#first_slider_link{
+    font-size: 14px;
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+#first_slider_link>a,span{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+.first_slider_heading{
+    font-size: 22px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.first_slider_heading>span{
+    color: black;
+}
+
+.first_slider_box{
+    width: 200vw;
+    height: 200px;
+    border: 1px solid;
+    
+}
+.first_slider_fslide{
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+
+
+#map{
+    width: 90vw;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+#map>p:first-child{
+    font-size: 22px;
+}
+#map iframe{
+    width: 100%;
+    height: 350px;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    width: 100%;
+    height: 350px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width: 100%;
+    height: 350px;
+}
+
+#aboutlocation{
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 40px;
+}
+#aboutlocation>h3{
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+#aboutlocation p{
+    font-size: 15px;
+    color: rgb(124, 124, 124);
+}
+
+#faq{
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 40px;
+}
+#faq>h3{
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+#faq h6{
+    color: rgb(68, 68, 68);
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+#faq p{
+    font-size: 15px;
+    color: rgb(124, 124, 124);
+}
+
+.holidayhome{
+    width: 90vw;
+}
+.holidayhome>div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+}
+.holidayhome img{
+    width: 100%;
+    height: 200px;
+}
+.holidayhome>div>:nth-child(2){
+    color: rgb(151, 150, 150);
+    font-size: 14px;
+    text-align: left;
+    margin: 0px;
+}
+.holidayhome>div>:nth-child(3){
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    margin: 0px;
+    color: rgb(30, 135, 240)
+    ;
+}
+.holidayhome>div>:nth-child(4){
+    font-size: 15px;
+    text-align: left;
+    margin: 0px;
+}
+.holidayhome>div>:nth-child(5){
+    font-size: 10px;
+    text-align: left;
+    margin: 0px;
+    color: rgb(30, 135, 240)
+    ;
+}
+.holidayhome>div>:nth-child(6){
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    margin: 0px;
+    color: rgb(30, 135, 240)
+    ;
+}
+.holidayhome>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.holidayhome2{
+    width: 90vw;
+}
+.holidayhome2>div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+}
+.holidayhome2>div>div{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.holidayhome2 img{
+    width: 100%;
+    height: 200px;
+}
+.holidayhome2>div>div>div{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(32, 32, 32, 0.795);
+    color: rgb(168, 168, 168);
+    font-weight: 500;
+    width: 100%;
+    font-size: 14px;
+}
+.holidayhome2 p{
+    margin: 0px;
+}
+.holidayhome2>div>:nth-child(2){
+    color: royalblue;
+    font-size: 14px;
+    font-weight: 500;
+}
+.holidayhome2>div>:nth-child(3){
+    font-size: 14px;
+}
+.holidayhome2>div>:nth-child(4){
+    font-size: 12px;
+}
+.holidayhome2>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}

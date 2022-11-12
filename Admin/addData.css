@@ -1,0 +1,114 @@
+
+*{
+    font-family: "Segoe UI","Arial,sans-serif";
+
+}
+body{
+
+    background-color:#262626;;
+} 
+
+form{
+
+     width: 490px; 
+    height: 450px; 
+  
+    margin-top: 5px;
+
+   margin-left: 38%; 
+}
+
+input{
+
+    margin: 5px 10px;
+    width: 200px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+#logo{
+
+    margin-left: 44%;
+    margin-top: 10px;
+}
+
+#logo img{
+
+    width: 27%;
+}
+
+select{
+
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 30px;
+   
+}
+
+
+
+h3{
+
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+#sub{
+
+    width: 186px;
+    height: 35px;
+    margin-left: 146px;
+    margin-top: 20px;
+}
+
+ #data{
+
+    margin-top: -150px;
+} 
+
+#append{
+  
+    display: grid;
+     gap:20px;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(200px);
+     width: 80%;
+    margin: auto;
+     
+
+     }
+
+     #append img{
+
+        width: 100%;
+     }
+
+
+     #dash > h3 > a{
+
+        text-decoration: none;
+        color:rgb(240, 240, 168);
+        float: left;
+        padding: 8px;
+       
+    
+    }
+
+    #dash > h3 > a:hover{
+
+        background-color: rgb(71, 0, 50);
+        cursor: pointer;
+        color: white;
+          width: 150px; 
+          font-family: Arial, Helvetica, sans-serif;
+      
+       /* Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif */
+
+       
+    }
+
+   

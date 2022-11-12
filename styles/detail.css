@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  position: fixed;
+}
+
+#logo {
+  padding-left: 10px;
+  display: flex;
+  margin-top: -4px;
+  padding: 8px;
+}
+#logo img {
+  width: 100%;
+  height: 56px;
+}
+
+button {
+  font-family: "Segoe UI", "Arial,sans-serif";
+  margin-top: 15px;
+}
+
+/* #res{
+    
+    margin-top: 20px;
+    margin-left: 35px;
+    font-family: "Segoe UI","Arial,sans-serif"
+    } */
+
+#main {
+  display: flex;
+}
+
+#container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(400px);
+  width: 55%;
+
+  /* margin-top: 100px; */
+}
+
+#parent {
+  width: 80%;
+  height: 500px;
+  margin-top: 20px;
+  margin-top: 30px;
+  display: flex;
+}
+
+#parent img {
+  width: 92%;
+  height: 92%;
+  margin-left: 10px;
+}
+
+#box1 {
+  width: 48%;
+}
+
+#box2 {
+  display: flex;
+  margin-top: 25px;
+  width: 52%;
+  margin-left: 70px;
+}
+
+.adding {
+  border-top: 1px solid #666666;
+  display: flex;
+  background: #fff;
+  color: #666;
+
+  width: 1000px;
+  margin-left: 30px;
+}
+
+#side_checkout {
+  border: 1px solid #666666;
+  height: 1000px;
+  width: 400px;
+
+  margin-top: 61px;
+  padding-right: 50px;
+  margin-left: 970px;
+}
+
+#align {
+  height: 500px;
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+#chkin_chkot {
+  display: flex;
+  height: 40px;
+  width: 350px;
+  margin: auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#checkin,
+#checkout {
+  width: 160px;
+}
+
+#choose_guests {
+  margin-top: 20px;
+  height: 40px;
+  width: 350px;
+}
+
+#rateplan {
+  margin-top: 20px;
+}
+
+#total {
+  display: flex;
+  height: 60px;
+  width: 350px;
+  margin-top: 20px;
+  gap: 130px;
+}
+#itf {
+  margin-top: 5px;
+}
+
+#vies_dtl {
+  margin-top: 10px;
+  color: #1e87f0;
+}
+
+#request_to_book {
+  height: 60px;
+  width: 350px;
+  border: 1px solid #1e87f0;
+  background-color: #1e87f0;
+  color: white;
+  margin-top: 25px;
+}
+
+#scp {
+  margin-top: 20px;
+  color: #1e87f0;
+  margin-left: 80px;
+}
+
+#pernight {
+  margin-left: 100px;
+  margin-top: -25px;
+  color: #666666;
+}
+
+#starting {
+  color: #666666;
+}
+
+#navbar2 {
+  height: 180px;
+  width: 100px;
+}
+#navigate {
+  display: flex;
+  margin-top: 70px;
+  height: 80px;
+  width: 1000px;
+  margin-left: 30px;
+  align-items: center;
+  gap: 6px;
+}
+
+.lctn_icon {
+  height: 30px;
+  margin-top: 15px;
+}
+
+.lct_plc {
+  display: flex;
+}
+
+#rating_txt {
+  margin-left: 20px;
+}
+
+.seereview {
+  color: blue;
+}
+
+#rt_sv {
+  margin-top: 10px;
+  display: flex;
+  gap: 180px;
+}
+
+#home_des {
+ 
+
+  height: 600px;
+  width: 1000px;
+  margin-left: 40px;
+}
+
+#des_bar {
+  border-bottom: 1px solid #666666;
+  display: flex;
+  height: 50px;
+  width: 1000px;
+  gap: 20px;
+}
+
+.i_icon {
+  height: 20px;
+}
+
+.overview {
+  display: flex;
+  gap: 8px;
+  height: 45px;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+}
+
+.over_txt {
+  margin-top: 3px;
+}
+
+#villa_des {
+  display: flex;
+  height: 500px;
+  width: 1000px;
+  gap:20px
+}
+
+#villa_des1 {
+  height: 450px;
+  width: 470px;
+  margin-top: 50px;
+}
+
+#villa_type {
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+  width: 470;
+  height: 113px;
+  padding-top: 10px;
+}
+.villa_nm {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.top {
+  text-align: center;
+  margin-top: 10px;
+  color: #666666;
+}
+
+#bed_bath {
+  display: flex;
+  gap: 20px;
+  width: 470;
+  height: 113px;
+}
+
+.bedrm {
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+  height: 113px;
+  width: 235px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#no_bed,
+#no_bath,
+#max_g {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
+#max_guest {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+  box-sizing: border-box;
+  height: 113px;
+  width: 235px;
+  margin-top: 45px;
+  margin-left: 120px;
+}
+
+#villa_des2{
+  
+  margin-top: 50px;
+}
+
+#villa_des3,#villa_des4{
+  line-height: 22.5px;
+}
+#villa_des4{
+  margin-top: 35px;
+}

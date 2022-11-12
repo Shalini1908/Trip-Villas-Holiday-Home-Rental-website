@@ -1,0 +1,150 @@
+#row6_footer {
+  display: flex;
+  width: 97%;
+  height: 50px;
+  margin: auto;
+  column-gap: 40px;
+  color: rgba(0, 0, 0, 0.647);
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.262);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+}
+
+#asia:hover {
+  color: black;
+  cursor: pointer;
+  border-bottom: 1px solid #1e87f0;
+}
+
+#europe:hover {
+  color: black;
+  cursor: pointer;
+  border-bottom: 1px solid #1e87f0;
+}
+
+#NA:hover {
+  color: black;
+  cursor: pointer;
+  border-bottom: 1px solid #1e87f0;
+}
+
+#SA:hover {
+  color: black;
+  cursor: pointer;
+  border-bottom: 1px solid #1e87f0;
+  /* border-bottom: 2px solid rgba(0, 0, 0, 0.856); */
+}
+
+#africa:hover {
+  color: black;
+  cursor: pointer;
+  border-bottom: 1px solid #1e87f0;
+}
+
+#oceania:hover {
+  color: black;
+  cursor: pointer;
+  border-bottom: 1px solid #1e87f0;
+}
+
+#footer_container {
+  width: 95%;
+  height: auto;
+  border: 0px solid red;
+  margin: auto;
+}
+
+#row6_footer_inner {
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin: auto;
+}
+
+#row6_footer_inner2 {
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin: auto;
+  display: none;
+}
+
+#row6_footer_inner3 {
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin: auto;
+  display: none;
+}
+
+#row6_footer_inner4 {
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin: auto;
+  display: none;
+}
+
+#row6_footer_inner5 {
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin: auto;
+  display: none;
+}
+
+#row6_footer_inner6 {
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin: auto;
+  display: none;
+}
+.footer_p2 {
+  font-size: 13px;
+  margin-top: -10px;
+  color: rgba(0, 0, 0, 0.534);
+}
+.footer_p2:hover {
+  text-decoration: underline;
+}
+
+.destination > p:nth-child(1) {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.738);
+}
+
+.destination > p:nth-child(1):hover {
+  text-decoration: underline;
+}
+
+.des_box1 {
+  margin-top: 30px;
+  margin-left: 5px;
+}
+
+.des_box2 {
+  margin-top: 30px;
+}
+
+.des_box3 {
+  margin-top: 30px;
+}
+
+.des_box4 {
+  margin-top: 30px;
+}
+
+.des_box5 {
+  margin-top: 30px;
+}
+
+.des_box6 {
+  margin-top: 30px;
+}

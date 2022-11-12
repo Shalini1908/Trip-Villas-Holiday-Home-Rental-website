@@ -1,0 +1,104 @@
+
+body{
+
+    background-color:#262626;;
+} 
+
+form{
+
+     width: 340px; 
+    height: 450px; 
+   
+    margin-top: 10px;
+
+   margin-left: 38%; 
+}
+
+input{
+
+    margin: 5px 1px;
+    width: 150px;
+    height: 28px;
+    padding-left: 10px;
+}
+
+#logo{
+
+    margin-left: 44%;
+    margin-top: 10px;
+}
+
+#logo img{
+
+    width: 27%;
+}
+
+select{
+
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 30px;
+   
+}
+
+
+
+h3{
+
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+#sub{
+
+    width: 186px;
+    height: 35px;
+    margin-left: 74px;
+}
+
+ #data{
+
+    margin-top: -150px;
+} 
+
+#append{
+  
+    display: grid;
+     gap:20px;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(200px);
+     width: 80%;
+    margin: auto;
+     
+
+     }
+
+     #append img{
+
+        width: 100%;
+     }
+
+
+     #dash > h3 > a{
+
+        text-decoration: none;
+        color:black;
+        float: left;
+        padding: 8px;
+       
+    
+    }
+
+    #dash > h3 > a:hover{
+
+        background-color: rgb(71, 0, 50);
+        cursor: pointer;
+        color: white;
+          width: 150px; 
+          font-family: Arial, Helvetica, sans-serif;
+      
+       
+       
+    }

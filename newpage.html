@@ -4,24 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/sign_navbar.css">
     <link rel="shortcut icon" href="https://i.ibb.co/YtfV4nw/Crystal-Villas-Navbar-Logo-resized-removebg-preview.png">
     <style>
-        body{
-            background-color: rgb(99, 97, 97);
+        
+            body{
+            background-image: url(Images/image.jpg);
+            /* background-repeat: repeat;  */
+            background-position: center;
+            background-size: 50% 100%;
+        
         }
+
+        
         #newID{
             margin: auto;
+            animation-name: example;
+            animation-duration: 5s;
+
         }
+        @keyframes example {
+            0% {
+                color: red;
+            }
+
+            25% {
+                color: rgb(255, 255, 4);
+            }
+
+            50% {
+                color: rgb(255, 252, 252);
+            }
+
+            100% {
+                color: rgb(30, 135, 240);
+            }
+        }
+
         #newP{
             display: grid;
             grid-template-columns: repeat(1,30%);
             justify-content: center;
             gap: 20px;
+            margin-top: 65px;
         }
         #newP>input{
             height: 35px;
             padding-left: 10px;
+            font-size: 16px;
+            font-weight: bold;
         }
         #newP>h1{
             color: white;
@@ -32,6 +63,7 @@
             width: 120px;
             height: 45px;
             font-size: 16px;
+            cursor: pointer;
         }
     </style>
     <title>Sign-Up</title>
@@ -52,3 +84,6 @@
 </body>
 </html>
 <script src="./scripts/newpage.js" type="module"></script>
+<script src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>

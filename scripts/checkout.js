@@ -111,35 +111,42 @@ console.log(sum);
 total.append(sum);
 
 let agree_continue_btn_div = document.getElementById("agree_continue_btn");
-let cc = document.getElementById("country_code").value;
-let mob = document.getElementById("mn").value;
-let otp = document.getElementById("otp").value;
-let firstname = document.getElementById("firstname").value;
-let lastname = document.getElementById("lastname").value;
-let email = document.getElementById("email").value;
 
 agree_continue_btn_div.addEventListener("click", function () {
+  let country_code = document.getElementById("country_code").value;
+  let mn = document.getElementById("mn").value;
+  let otp = document.getElementById("otp").value;
+  let firstname = document.getElementById("firstname").value;
+  let Lastname = document.getElementById("Lastname").value;
+  let Email = document.getElementById("Email").value;
+
+  let obj = {
+    country_code,
+    mn,
+    otp,
+    firstname,
+    Lastname,
+    Email,
+  };
+
   if (
-    cc == "" ||
-    mob == "" ||
-    otp == "" ||
-    firstname == "" ||
-    lastname == "" ||
-    email == ""
+    obj.country_code === "" ||
+    obj.mn === "" ||
+    obj.otp === "" ||
+    obj.firstname === "" ||
+    obj.Lastname === "" ||
+    obj.Email === ""
   ) {
     alert("Please fill up all the fields");
-    return;
   } else {
-    let obj = {
-      cc,
-      mob,
-      otp,
-      firstname,
-      lastname,
-      email,
-    };
     localStorage.setItem("userInfo", JSON.stringify(obj));
     alert("Booking Successful");
     window.location.href = "index.html";
   }
+  document.getElementById("country_code").value = null;
+  document.getElementById("mn").value = null;
+  document.getElementById("otp").value = null;
+  document.getElementById("firstname").value = null;
+  document.getElementById("Lastname").value = null;
+  document.getElementById("Email").value = null;
 });

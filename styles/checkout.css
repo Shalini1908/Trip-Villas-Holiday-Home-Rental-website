@@ -4,7 +4,7 @@
 #main_container {
   display: flex;
   gap: 50px;
-  margin: 50px 50px 50px 50px;
+  margin: 100px 50px 50px 50px;
 }
 #container1 {
   width: 1200px;

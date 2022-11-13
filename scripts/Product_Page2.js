@@ -238,5 +238,8 @@ for (let i=0;i<data.length;i++) {
 }
 
 document.querySelector("#searchbtn").addEventListener("click", function(){
+
     window.location.href= "product_1.html"
+
+
 })

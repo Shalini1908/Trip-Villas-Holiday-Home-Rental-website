@@ -1,6 +1,6 @@
 import getnavbar from "../components/navbar.js";
 
-let navBar_div = (document.getElementById("navBar").innerHTML = getnavbar());
+ document.getElementById("navBar").innerHTML = getnavbar();
 
 let ccs = JSON.parse(localStorage.getItem("checkin_checkout_selectg"));
 // console.log(ccs);
@@ -113,10 +113,9 @@ total.append(sum);
 let agree_continue_btn_div = document.getElementById("agree_continue_btn");
 
 
-
 agree_continue_btn_div.addEventListener("click", function () {
+  let country_code = document.getElementById("country_code").value;
 
-  let country_code = document.getElementById("country_code").value
   let mn = document.getElementById("mn").value;
   let otp = document.getElementById("otp").value;
   let firstname = document.getElementById("firstname").value;
@@ -131,8 +130,8 @@ agree_continue_btn_div.addEventListener("click", function () {
     Lastname,
     Email,
   };
+ 
 console.log(obj)
-
 
   if (
     obj.country_code === "" ||
@@ -142,15 +141,21 @@ console.log(obj)
     obj.Lastname === "" ||
     obj.Email === ""
   ) {
+
      alert("Please fill up all the fields");
 
     
   } else {
 
-  
     localStorage.setItem("userInfo", JSON.stringify(obj));
     alert("Booking Successful");
     window.location.href = "index.html";
   }
+  document.getElementById("country_code").value = null;
+  document.getElementById("mn").value = null;
+  document.getElementById("otp").value = null;
+  document.getElementById("firstname").value = null;
+  document.getElementById("Lastname").value = null;
+  document.getElementById("Email").value = null;
 });
 

@@ -1,7 +1,3 @@
-import getnavbar from "../components/navbar.js";
-
-let navbar = (document.getElementById("getnavbar").innerHTML = getnavbar());
-
 let dataappend1 = document.getElementById("row6_footer_inner");
 let dataappend2 = document.getElementById("row6_footer_inner2");
 let dataappend3 = document.getElementById("row6_footer_inner3");
@@ -90,6 +86,9 @@ let search_again = () => {
     alert("Sorry For Inconvenience this place is not available");
   }
   document.getElementById("country").value = null;
+  document.getElementById("date1").value = null;
+  document.getElementById("date2").value = null;
+  document.getElementById("guests").value = null;
 };
 
 let redirect = document.getElementById("goa_redirect");

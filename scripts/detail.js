@@ -1,3 +1,7 @@
+import getnavbar from "../components/navbar.js";
+
+let navBar_div = (document.getElementById("navBar").innerHTML = getnavbar());
+
 let bookingData = JSON.parse(localStorage.getItem("detail"));
 let values = JSON.parse(localStorage.getItem("checkin_checkout_selectg"));
 
@@ -26,7 +30,7 @@ function renderDom(data) {
 
   let title = document.createElement("h4");
   title.innerText = data.Title;
-  title.style.marginTop = "40px";
+  title.style.marginTop = "50px";
   title.style.color = "#262626";
   title.style.cursor = "pointer";
   title.style.fontSize = "35px";
@@ -58,46 +62,47 @@ function renderDom(data) {
   let btn_1 = document.createElement("button");
   btn_1.innerText = data.btn_1;
   btn_1.style.padding = "0 15px";
-  btn_1.style.lineHeight = "28px";
+  btn_1.style.lineHeight = "35px";
   btn_1.style.fontSize = ".875rem";
   btn_1.style.cursor = "pointer";
   btn_1.style.marginRight = "20px";
   btn_1.style.backgroundColor = "transparent";
-  btn_1.style.color = "blue";
-  btn_1.style.border = "1px solid blue";
+  btn_1.style.color = "#1e87f0";
+  btn_1.style.border = "1px solid #1e87f0";
 
   let btn_2 = document.createElement("button");
   btn_2.innerText = data.btn_2;
   btn_2.style.padding = "0 15px";
-  btn_2.style.lineHeight = "28px";
+  btn_2.style.lineHeight = "35px";
   btn_2.style.fontSize = ".875rem";
   btn_2.style.cursor = "pointer";
   btn_2.style.marginRight = "20px";
   btn_2.style.backgroundColor = "transparent";
-  btn_2.style.color = "blue";
-  btn_2.style.border = "1px solid blue";
+  btn_2.style.color = "#1e87f0";
+  btn_2.style.border = "1px solid #1e87f0";
 
   let btn_3 = document.createElement("button");
   btn_3.innerText = data.btn_3;
   btn_3.style.padding = "0 15px";
-  btn_3.style.lineHeight = "28px";
+  btn_3.style.lineHeight = "35px";
   btn_3.style.fontSize = ".875rem";
   btn_3.style.cursor = "pointer";
   btn_3.style.marginRight = "20px";
   btn_3.style.backgroundColor = "transparent";
-  btn_3.style.color = "blue";
-  btn_3.style.border = "1px solid blue";
+  btn_3.style.color = "#1e87f0";
+  btn_3.style.border = "1px solid #1e87f0";
 
   let btn_4 = document.createElement("button");
   btn_4.innerText = data.btn_4;
   btn_4.style.padding = "0 15px";
-  btn_4.style.lineHeight = "28px";
+  btn_4.style.lineHeight = "35px";
   btn_4.style.fontSize = ".875rem";
   btn_4.style.cursor = "pointer";
   btn_4.style.marginRight = "20px";
   btn_4.style.backgroundColor = "transparent";
-  btn_4.style.color = "blue";
-  btn_4.style.border = "1px solid blue";
+  btn_4.style.color = "#1e87f0";
+  btn_4.style.border = "1px solid #1e87f0";
+  btn_4.style.marginTop = "18px";
 
   card.append(image);
 
@@ -117,35 +122,37 @@ let h1 = (document.getElementById(
   "show_price"
 ).innerHTML = `₹ ${bookingData.price}`);
 
+let sum = 0;
+let perhead = 500;
+
 let book_btn = document.getElementById("request_to_book");
+
+let select_g = document.getElementById("choose_guests");
+let g;
+select_g.addEventListener("change", function () {
+  let price_in_rs = document.getElementById("price_in_rs");
+  g = document.getElementById("choose_guests").value;
+  sum = bookingData.price + g * perhead;
+  console.log(sum);
+  price_in_rs.innerText = `₹${sum}`;
+});
 
 book_btn.onclick = () => {
   let checkindt = document.getElementById("checkin").value;
   let checkoutdt = document.getElementById("checkout").value;
-  let select_g = +document.getElementById("choose_guests").value;
-
   if (checkindt === "" && checkoutdt === "") {
+    alert("Please select dates");
     return;
   } else {
     let obj = {
       checkindt,
       checkoutdt,
-      select_g,
+      g,
     };
     localStorage.setItem("checkin_checkout_selectg", JSON.stringify(obj));
     window.location.href = "checkout.html";
   }
 };
-
-let sum = 0;
-let no_of_guests = values.select_g;
-
-let perhead = 2000;
-
-sum = bookingData.price * no_of_guests * perhead;
-
-let price_in_rs = document.getElementById("price_in_rs");
-price_in_rs.innerText = `₹${sum}`;
 
 let ref_no = document.getElementById("ref_no");
 ref_no.innerText = bookingData.id;
@@ -157,4 +164,4 @@ let no_bed = document.getElementById("no_bed");
 no_bed.innerText = `${bookingData.btn_2}'S`;
 
 let no_bath = document.getElementById("no_bath");
-no_bath.innerText=`${bookingData.btn_3}'S`
+no_bath.innerText = `${bookingData.btn_3}'S`;

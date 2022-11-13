@@ -1,6 +1,9 @@
 import productData from "../Data/data2.js";
 let product_array = productData;
 
+import getnavbar from "../components/navbar.js";
+
+let navbar = document.getElementById("navbar").innerHTML = getnavbar();
 
 function renderDom(data) {
 
@@ -20,7 +23,15 @@ function renderDom(data) {
     data.forEach((el) => {
 
         let box = document.createElement("div");
-        box.setAttribute("class","adding")
+        box.setAttribute("class","adding");
+
+        box.setAttribute("class", "adding");
+
+        box.onclick = () => {
+
+            boxing(el)
+        }
+
 
         let card = document.createElement("div");
         card.setAttribute("id", "parent");
@@ -156,7 +167,11 @@ function renderDom(data) {
 
 renderDom(product_array)
 
+let boxing = (el) => {
 
+  localStorage.setItem("detail", JSON.stringify(el));
+  window.location.href = "detail.html";
+}
 
 
 document.getElementById("ac").addEventListener("click", ac_filt);

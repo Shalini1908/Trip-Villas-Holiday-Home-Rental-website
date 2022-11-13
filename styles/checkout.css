@@ -1,9 +1,10 @@
+.b {
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
 #main_container {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   gap: 50px;
-  margin: 50px 50px 50px 50px;
+  margin: 100px 50px 50px 50px;
 }
 #container1 {
   width: 1200px;
@@ -20,11 +21,17 @@
 }
 
 #btf {
-  margin-left: 25px;
+  margin-left: 40px;
+  margin-top: 40px;
 }
-
+#lines {
+  margin-left: 20px;
+  margin-top: 20px;
+}
 ul li {
   padding: 5px 0px;
+  margin-left: 50px;
+  gap: 10px;
 }
 
 #hotel_img {
@@ -41,7 +48,7 @@ ul li {
 }
 #div1 {
   margin-left: 20px;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 #container3 {
@@ -57,13 +64,15 @@ ul li {
 }
 
 #container3 > div > h4 {
-  margin-top: 35px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 #security_deposite {
   border: 1px solid pink;
   height: 90px;
   background-color: #fef4f6;
+
 }
 
 #alert {
@@ -74,6 +83,7 @@ ul li {
 
 #i {
   display: flex;
+  margin-top: -4px;
 }
 
 #rs {
@@ -81,7 +91,7 @@ ul li {
 }
 
 #rsd {
-  margin-top: -2px;
+  margin-top: 0px;
   margin-left: 10px;
 }
 
@@ -275,11 +285,12 @@ ul li {
   box-sizing: border-box;
   border: 2px solid #1e87f0;
   box-sizing: border-box;
-  height: 280px;
+  height: 300px;
   width: 550px;
-  padding-left: 20px;
+  padding-left: 25px;
   padding-top: 10px;
   margin: 20px 20px 20px 20px;
+  padding-right: 20px;
 }
 #bluetick {
   display: flex;
@@ -296,6 +307,7 @@ ul li {
 #agree_continue {
   background-color: #f8f8f8;
   color: #666666;
+  margin-top: 30px;
 }
 
 #agree_continue_btn {
@@ -314,12 +326,32 @@ ul li {
 
 .texts > p {
   font-size: small;
-  margin-top: -5px;
+  margin-top: -10px;
 }
 
 #locate {
-  margin-top: -10px;
+  margin-top: -15px;
+ 
 }
 .st {
   color: #666666;
+  margin-top: 25px;
+  margin-left: 25px;
+  padding-top: 10px;
+}
+
+#title{
+  margin-top: -10px;
+  margin-left: -1px;
+}
+
+#total_div{
+  margin-top: 30px;
+}
+#total{
+  margin-left: 23px;
+}
+
+#ref_id{
+  margin-top: -0.5px;
 }

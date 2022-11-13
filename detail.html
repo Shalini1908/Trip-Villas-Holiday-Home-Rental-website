@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail Page</title>
     <link rel="stylesheet" href="./styles/detail.css" />
+    <link rel="stylesheet" href="./styles/details_navbar.css" />
+    <link
+      rel="shortcut icon"
+      href="https://i.ibb.co/YtfV4nw/Crystal-Villas-Navbar-Logo-resized-removebg-preview.png"
+    />
   </head>
-  <body>
-    <div id="navbar">
-      <div id="logo">
-        <img src="Images/Crystal_Villas.png" alt="" />
-      </div>
-    </div>
+  <body class="b">
+    <div id="navBar"></div>
     <div id="main">
       <div id="navbar2">
         <div id="navigate">
@@ -131,6 +132,7 @@
 
           <div id="select_guests">
             <select name="" id="choose_guests">
+              <option value="">--Select--</option>
               <option value="1">1 guest</option>
               <option value="2">2 guests</option>
               <option value="3">3 guests</option>
@@ -156,7 +158,7 @@
           </div>
           <button id="request_to_book">REQUEST TO BOOK</button>
           <div id="scp">
-            <a href="#" style="text-decoration: none"
+            <a href="#" style="text-decoration: none; color: #1e87f0"
               ><p>Stringent Cancellation Policy</p></a
             >
           </div>
@@ -165,4 +167,4 @@
     </div>
   </body>
 </html>
-<script src="./scripts/detail.js"></script>
+<script type="module" src="./scripts/detail.js"></script>

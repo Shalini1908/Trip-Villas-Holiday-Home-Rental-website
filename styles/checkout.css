@@ -196,7 +196,7 @@ ul li {
 }
 
 #firstname,
-#lastname {
+#Lastname {
   box-sizing: border-box;
   height: 40px;
   width: 320px;
@@ -205,18 +205,18 @@ ul li {
 #firstname:hover {
   border-color: #1e87f0;
 }
-#lastname:hover {
+#Lastname:hover {
   border-color: #1e87f0;
 }
 
-#email {
+#Email {
   box-sizing: border-box;
   height: 40px;
   width: 550px;
   margin: 20px 20px 20px 20px;
   padding-left: 10px;
 }
-#email:hover {
+#Email:hover {
   border-color: #1e87f0;
 }
 #message_box {

@@ -237,6 +237,3 @@ for (let i=0;i<data.length;i++) {
     document.querySelector(".holidayhome2").append(main);
 }
 
-document.querySelector("#searchbtn").addEventListener("click", function(){
-    window.location.href="../search page/search.html"
-})

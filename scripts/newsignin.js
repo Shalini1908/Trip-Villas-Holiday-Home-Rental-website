@@ -20,10 +20,10 @@ let newB_btn = (document.getElementById("newB").onclick = () => {
   for (let i = 0; i < signupls.length; i++) {
     if (signupls[i].mobile === obj.mob && signupls[i].pass === obj.pwd) {
       window.location.href = "./index.html";
-      return;
+      break;
     } else {
       alert("Wrong Credentials");
-      return;
+      break;
     }
   }
 

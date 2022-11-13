@@ -72,7 +72,6 @@ ul li {
   border: 1px solid pink;
   height: 90px;
   background-color: #fef4f6;
-
 }
 
 #alert {
@@ -196,7 +195,7 @@ ul li {
 }
 
 #firstname,
-#lastname {
+#Lastname {
   box-sizing: border-box;
   height: 40px;
   width: 320px;
@@ -205,18 +204,18 @@ ul li {
 #firstname:hover {
   border-color: #1e87f0;
 }
-#lastname:hover {
+#Lastname:hover {
   border-color: #1e87f0;
 }
 
-#email {
+#Email {
   box-sizing: border-box;
   height: 40px;
   width: 550px;
   margin: 20px 20px 20px 20px;
   padding-left: 10px;
 }
-#email:hover {
+#Email:hover {
   border-color: #1e87f0;
 }
 #message_box {
@@ -331,7 +330,6 @@ ul li {
 
 #locate {
   margin-top: -15px;
- 
 }
 .st {
   color: #666666;
@@ -340,18 +338,18 @@ ul li {
   padding-top: 10px;
 }
 
-#title{
+#title {
   margin-top: -10px;
   margin-left: -1px;
 }
 
-#total_div{
+#total_div {
   margin-top: 30px;
 }
-#total{
+#total {
   margin-left: 23px;
 }
 
-#ref_id{
+#ref_id {
   margin-top: -0.5px;
 }

@@ -27,6 +27,13 @@ h2{
 
 }
 
+#cont > h2 > a{
+
+    margin-bottom: 20px;
+}
+
+
+
 h3{
 
     margin-left: 25%;
@@ -78,6 +85,11 @@ h3{
     margin-top: -10px;
 
     
+}
+
+#user{
+
+    width: 20%;
 }
 
 #logo img{

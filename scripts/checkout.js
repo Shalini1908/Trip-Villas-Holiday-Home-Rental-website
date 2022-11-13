@@ -69,7 +69,7 @@ let renderDOM2 = () => {
 
   let gsts = document.createElement("div");
   let guest_div = document.createElement("h4");
-  guest_div.innerText = ccs.select_g;
+  guest_div.innerText = ccs.g;
   let txt3 = document.createElement("p");
   txt3.innerText = "Guests";
   gsts.append(guest_div, txt3);
@@ -111,21 +111,21 @@ console.log(sum);
 total.append(sum);
 
 let agree_continue_btn_div = document.getElementById("agree_continue_btn");
-agree_continue_btn_div.onclick = () => {
-  let cc = document.getElementById("country_code").value;
-  let mob = document.getElementById("mn").value;
-  let otp = document.getElementById("otp").value;
-  let firstname = document.getElementById("firstname").value;
-  let lastname = document.getElementById("lastname").value;
-  let email = document.getElementById("email").value;
+let cc = document.getElementById("country_code").value;
+let mob = document.getElementById("mn").value;
+let otp = document.getElementById("otp").value;
+let firstname = document.getElementById("firstname").value;
+let lastname = document.getElementById("lastname").value;
+let email = document.getElementById("email").value;
 
+agree_continue_btn_div.addEventListener("click", function () {
   if (
-    cc.value == "" ||
-    mob.value == "" ||
-    otp.value == "" ||
-    firstname.value == "" ||
-    lastname.value == "" ||
-    email.value == ""
+    cc == "" ||
+    mob == "" ||
+    otp == "" ||
+    firstname == "" ||
+    lastname == "" ||
+    email == ""
   ) {
     alert("Please fill up all the fields");
     return;
@@ -140,5 +140,6 @@ agree_continue_btn_div.onclick = () => {
     };
     localStorage.setItem("userInfo", JSON.stringify(obj));
     alert("Booking Successful");
+    window.location.href = "index.html";
   }
-};
+});

@@ -102,6 +102,7 @@ function renderDom(data) {
   btn_4.style.backgroundColor = "transparent";
   btn_4.style.color = "#1e87f0";
   btn_4.style.border = "1px solid #1e87f0";
+  btn_4.style.marginTop = "18px";
 
   card.append(image);
 
@@ -121,13 +122,24 @@ let h1 = (document.getElementById(
   "show_price"
 ).innerHTML = `₹ ${bookingData.price}`);
 
+let sum = 0;
+let perhead = 500;
+
 let book_btn = document.getElementById("request_to_book");
+
+let select_g = document.getElementById("choose_guests");
+let g;
+select_g.addEventListener("change", function () {
+  let price_in_rs = document.getElementById("price_in_rs");
+  g = document.getElementById("choose_guests").value;
+  sum = bookingData.price + g * perhead;
+  console.log(sum);
+  price_in_rs.innerText = `₹${sum}`;
+});
 
 book_btn.onclick = () => {
   let checkindt = document.getElementById("checkin").value;
   let checkoutdt = document.getElementById("checkout").value;
-  let select_g = +document.getElementById("choose_guests").value;
-
   if (checkindt === "" && checkoutdt === "") {
     alert("Please select dates");
     return;
@@ -135,22 +147,12 @@ book_btn.onclick = () => {
     let obj = {
       checkindt,
       checkoutdt,
-      select_g,
+      g,
     };
     localStorage.setItem("checkin_checkout_selectg", JSON.stringify(obj));
     window.location.href = "checkout.html";
   }
 };
-
-let sum = 0;
-let no_of_guests = values.select_g;
-
-let perhead = 2000;
-
-sum = bookingData.price * no_of_guests * perhead;
-
-let price_in_rs = document.getElementById("price_in_rs");
-price_in_rs.innerText = `₹${sum}`;
 
 let ref_no = document.getElementById("ref_no");
 ref_no.innerText = bookingData.id;

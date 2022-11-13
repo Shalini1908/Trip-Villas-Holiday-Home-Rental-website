@@ -4,6 +4,7 @@
 
 #main {
   display: flex;
+  margin-top: 60px;
 }
 
 #container {
@@ -12,8 +13,6 @@
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(400px);
   width: 55%;
-
-
 }
 
 #parent {
@@ -133,8 +132,6 @@
   color: #666666;
 }
 
-
-
 #navigate {
   display: flex;
   margin-top: 0px;
@@ -200,7 +197,7 @@
 }
 
 .over_txt {
-text-align: center;
+  text-align: center;
 }
 
 #villa_des {

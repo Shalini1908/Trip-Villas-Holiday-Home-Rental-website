@@ -2,35 +2,31 @@ import getnavbar from "../components/navbar.js";
 
 let nav = document.getElementById("navbarImp");
 nav.innerHTML = getnavbar();
-     
 
+let signupls = JSON.parse(localStorage.getItem("signupData")) || [];
+let signinls = JSON.parse(localStorage.getItem("signinData")) || [];
+console.log(signupls);
 
-    let signupls = JSON.parse(localStorage.getItem("signupData")) || []
-    let signinls = JSON.parse(localStorage.getItem("signinData")) || []
-    console.log(signupls);
+let newB_btn = (document.getElementById("newB").onclick = () => {
+  let mob = document.getElementById("newMob").value;
+  let pwd = document.getElementById("newPass").value;
 
-    let newB_btn = document.getElementById("newB").onclick = () => {
+  let obj = {
+    mob,
+    pwd,
+  };
+  console.log(obj);
 
-    let mob = document.getElementById("newMob").value;
-    let pwd = document.getElementById("newPass").value;
-
-    let obj ={
-        mob,
-        pwd
+  for (let i = 0; i < signupls.length; i++) {
+    if (signupls[i].mobile === obj.mob && signupls[i].pass === obj.pwd) {
+      window.location.href = "./index.html";
+      return;
+    } else {
+      alert("Wrong Credentials");
+      return;
     }
-    console.log(obj)
+  }
 
-    for (let i=0; i<signupls.length; i++){
-        if(signupls[i].mobile === obj.mob && signupls[i].pass === obj.pwd){
-           
-            window.location.href="./index.html";
-            return;
-        }else{
-            alert("Wrong Credentials");
-            return;
-        }
-    }
-
-    document.getElementById("newMob").value = null;
-    document.getElementById("newPass").value = null;
-}
+  document.getElementById("newMob").value = null;
+  document.getElementById("newPass").value = null;
+});

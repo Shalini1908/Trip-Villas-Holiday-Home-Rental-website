@@ -20,13 +20,16 @@ nav.innerHTML = getnavbar();
     }
     console.log(obj)
 
-    signupls.forEach((el) => {
-        if(el.mobile === obj.mob && el.pass === obj.pwd){
+    for (let i=0; i<signupls.length; i++){
+        if(signupls[i].mobile === obj.mob && signupls[i].pass === obj.pwd){
            
             window.location.href="./index.html";
             return;
+        }else{
+            alert("Wrong Credentials");
+            return;
         }
-    })
+    }
 
     document.getElementById("newMob").value = null;
     document.getElementById("newPass").value = null;

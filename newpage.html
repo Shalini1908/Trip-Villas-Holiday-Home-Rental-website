@@ -59,11 +59,25 @@
             margin-top: 30px;
         }
         #newB{
-            margin-left: 35%;
+            margin-left: 12%;
             width: 120px;
             height: 45px;
             font-size: 16px;
             cursor: pointer;
+            color: rgb(24, 117, 210);
+            
+        }
+        #already{
+            margin-left: 8%;
+            width: 200px;
+            height: 45px;
+            font-size: 16px;
+            cursor: pointer;
+            color: rgb(24, 117, 210);
+        }
+        #btns{
+            display: flex;
+
         }
     </style>
     <title>Sign-Up</title>
@@ -79,7 +93,11 @@
         <input type="number" id="newMob" placeholder="Mobile No.">
         <input type="email" id="newMail" placeholder="Email">
         <input type="password" id="newPass" placeholder="Password">
-        <button id="newB">Create</button>
+        <div id="btns">
+            <button id="newB">Create</button>
+            
+            <a href="./newsignin.html"><button id="already">Already have an Account</button></a>
+        </div>
     </div>
 </body>
 </html>

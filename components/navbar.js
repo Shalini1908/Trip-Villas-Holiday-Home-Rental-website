@@ -3,7 +3,7 @@ function getnavbar() {
     <nav>
 
         <h1 id="logo">
-            <a href="./navbar.html"><img src="https://i.postimg.cc/wB0s9Zdm/Crystal-Villas-Navbar-Logo-resized-removebg-preview.png
+            <a href="./index.html"><img src="https://i.postimg.cc/wB0s9Zdm/Crystal-Villas-Navbar-Logo-resized-removebg-preview.png
                 " alt="CRYSTALVILLAS"></a>
                 <a id="admin" href="./Admin/admin.html"><h6>Admin</h6></a>
         </h1>
